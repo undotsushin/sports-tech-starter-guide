@@ -7,6 +7,8 @@ import remarkGfm from 'remark-gfm';
 import rehypePrism from 'rehype-prism-plus';
 import type { Metadata } from 'next';
 import CompleteButton from '@/components/CompleteButton';
+import Breadcrumb from '@/components/Breadcrumb';
+import TableOfContents from '@/components/TableOfContents';
 
 // コンテンツ一覧
 const contentSlugs = [
@@ -68,9 +70,10 @@ export default async function ContentPage({
   const { data, content } = matter(fileContent);
 
   return (
-    <article className="prose prose-lg max-w-none">
-      {/* ヘッダー */}
-      <div className="mb-8 p-6 bg-gradient-to-r from-primary-50 to-blue-50 rounded-xl border-l-4 border-primary-500">
+    <div className="flex gap-8 max-w-7xl mx-auto">
+      <article className="prose prose-lg flex-1">
+        {/* ヘッダー */}
+        <div className="mb-8 p-6 bg-gradient-to-r from-primary-50 to-blue-50 rounded-xl border-l-4 border-primary-500">
         <h1 className="text-3xl font-bold text-gray-900 mb-2">
           {data.title}
         </h1>
@@ -117,6 +120,12 @@ export default async function ContentPage({
           </a>
         )}
       </div>
-    </article>
+
+        {/* パンくずリスト */}
+        <Breadcrumb items={[{ label: data.title }]} />
+      </article>
+
+      <TableOfContents />
+    </div>
   );
 }

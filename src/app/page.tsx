@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { useProgress } from '@/hooks/useProgress';
+import Breadcrumb from '@/components/Breadcrumb';
 import {
   PaintBrushIcon,
   GlobeAltIcon,
@@ -198,6 +199,9 @@ export default function Home() {
           <li>最後に総合テストで理解度を確認しましょう</li>
         </ul>
       </section>
+
+      {/* パンくずリスト */}
+      <Breadcrumb items={[]} />
     </div>
   );
 }

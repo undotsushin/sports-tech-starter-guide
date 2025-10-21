@@ -9,9 +9,8 @@ export function useProgress() {
   const [progress, setProgress] = useState<Progress>({});
   const [mounted, setMounted] = useState(false);
 
-  useEffect(() => {
-    setMounted(true);
-    // LocalStorageから進捗を読み込む
+  // LocalStorageから進捗を読み込む関数
+  const loadProgress = () => {
     const savedProgress = localStorage.getItem(PROGRESS_KEY);
     if (savedProgress) {
       try {
@@ -20,6 +19,31 @@ export function useProgress() {
         console.error('Failed to parse progress:', error);
       }
     }
+  };
+
+  useEffect(() => {
+    setMounted(true);
+    loadProgress();
+
+    // LocalStorageの変更を監視
+    const handleStorageChange = (e: StorageEvent) => {
+      if (e.key === PROGRESS_KEY) {
+        loadProgress();
+      }
+    };
+
+    // カスタムイベントも監視（同じタブ内での変更用）
+    const handleCustomStorageChange = () => {
+      loadProgress();
+    };
+
+    window.addEventListener('storage', handleStorageChange);
+    window.addEventListener('progress-updated', handleCustomStorageChange);
+
+    return () => {
+      window.removeEventListener('storage', handleStorageChange);
+      window.removeEventListener('progress-updated', handleCustomStorageChange);
+    };
   }, []);
 
   const updateProgress = (
@@ -39,6 +63,8 @@ export function useProgress() {
     };
     setProgress(newProgress);
     localStorage.setItem(PROGRESS_KEY, JSON.stringify(newProgress));
+    // カスタムイベントを発火して他のコンポーネントに通知
+    window.dispatchEvent(new Event('progress-updated'));
   };
 
   const markAsCompleted = (slug: string) => {
@@ -63,9 +89,20 @@ export function useProgress() {
     return progress[slug]?.completed || false;
   };
 
-  const resetProgress = () => {
-    setProgress({});
-    localStorage.removeItem(PROGRESS_KEY);
+  const resetProgress = (slug?: string) => {
+    if (slug) {
+      // 特定の章のみリセット
+      const newProgress = { ...progress };
+      delete newProgress[slug];
+      setProgress(newProgress);
+      localStorage.setItem(PROGRESS_KEY, JSON.stringify(newProgress));
+    } else {
+      // 全体をリセット
+      setProgress({});
+      localStorage.removeItem(PROGRESS_KEY);
+    }
+    // カスタムイベントを発火して他のコンポーネントに通知
+    window.dispatchEvent(new Event('progress-updated'));
   };
 
   return {
