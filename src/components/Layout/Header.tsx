@@ -14,6 +14,7 @@ interface HeaderProps {
 export default function Header({ onMenuToggle, isMenuOpen }: HeaderProps) {
   const { getCompletedCount, mounted } = useProgress();
   const completedCount = mounted ? getCompletedCount() : 0;
+  const basePath = process.env.NODE_ENV === 'production' ? '/sports-tech-starter-guide' : '';
 
   return (
     <header className="bg-white border-b border-gray-200 sticky top-0 z-50">
@@ -22,7 +23,7 @@ export default function Header({ onMenuToggle, isMenuOpen }: HeaderProps) {
           <div className="flex items-center">
             <Link href="/" className="flex items-center gap-3">
               <Image
-                src="/images/undotsushinsya.png"
+                src={`${basePath}/images/undotsushinsya.png`}
                 alt="運動通信社"
                 width={40}
                 height={40}
