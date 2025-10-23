@@ -9,6 +9,8 @@ import type { Metadata } from 'next';
 import CompleteButton from '@/components/CompleteButton';
 import Breadcrumb from '@/components/Breadcrumb';
 import TableOfContents from '@/components/TableOfContents';
+import WhyNeeded from '@/components/MDX/WhyNeeded';
+import Quiz from '@/components/MDX/Quiz';
 
 // コンテンツ一覧
 const contentSlugs = [
@@ -89,6 +91,10 @@ export default async function ContentPage({
       <div className="mdx-content">
         <MDXRemote
           source={content}
+          components={{
+            WhyNeeded,
+            Quiz,
+          }}
           options={{
             mdxOptions: {
               remarkPlugins: [remarkGfm],
