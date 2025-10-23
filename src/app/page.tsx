@@ -198,6 +198,29 @@ export default function Home() {
         </div>
       </section>
 
+      {/* 隠しコンテンツカード */}
+      <section className="mt-8">
+        <Link
+          href="/90-advanced-test"
+          className="block p-6 bg-gradient-to-br from-red-50 to-orange-50 rounded-xl border-2 border-red-300 hover:border-red-500 hover:shadow-2xl transition-all duration-300 hover:-translate-y-1"
+        >
+          <div className="flex items-center gap-4">
+            <div className="text-5xl">👹</div>
+            <div className="flex-1">
+              <h3 className="text-xl font-bold text-red-700 mb-2">
+                隠しコンテンツ発見...!
+              </h3>
+              <p className="text-sm text-gray-700 mb-3">
+                運動通信社社員として更なる高みを目指すあなたへ。応用情報技術者試験レベルの難問30問があなたを待っています。
+              </p>
+              <span className="inline-block text-sm font-semibold text-red-600 bg-red-100 px-4 py-2 rounded-full">
+                🔥 鬼レベルに挑戦する →
+              </span>
+            </div>
+          </div>
+        </Link>
+      </section>
+
       {/* 使い方セクション */}
       <section className="mt-12 p-6 bg-primary-50 rounded-lg border border-primary-200">
         <h2 className="text-xl font-bold text-gray-900 mb-4">使い方</h2>
