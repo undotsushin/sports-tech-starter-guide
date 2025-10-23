@@ -11,6 +11,7 @@ import Breadcrumb from '@/components/Breadcrumb';
 import TableOfContents from '@/components/TableOfContents';
 import WhyNeeded from '@/components/MDX/WhyNeeded';
 import Quiz from '@/components/MDX/Quiz';
+import HiddenContentCard from '@/components/HiddenContentCard';
 
 // コンテンツ一覧
 const contentSlugs = [
@@ -96,6 +97,7 @@ export default async function ContentPage({
           components={{
             WhyNeeded,
             Quiz,
+            HiddenContentCard,
           }}
           options={{
             mdxOptions: {
