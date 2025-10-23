@@ -24,6 +24,7 @@ const contentSlugs = [
   '08-ai-usage',
   '09-markdown',
   '10-final-test',
+  '90-advanced-test',
 ];
 
 // 静的パスを生成
