@@ -102,12 +102,15 @@ const contents = [
 ];
 
 export default function Home() {
-  const { getCompletedCount, getCompletionPercentage, isCompleted, mounted } =
+  const { getCompletedCount, getCompletionPercentage, isCompleted, mounted, resetProgress } =
     useProgress();
+
+  // 通常のコンテンツ数（90-advanced-testを除く）
+  const normalContentsCount = contents.filter(c => c.order < 90).length;
 
   const completedCount = mounted ? getCompletedCount() : 0;
   const completionPercentage = mounted
-    ? getCompletionPercentage(contents.length)
+    ? getCompletionPercentage(normalContentsCount)
     : 0;
 
   return (
@@ -136,7 +139,7 @@ export default function Home() {
             </div>
           </div>
           <p className="text-sm text-gray-700 mt-3 font-medium">
-            進捗: {completedCount} / {contents.length} 章完了（
+            進捗: {completedCount} / {normalContentsCount} 章完了（
             {completionPercentage}%）
           </p>
         </div>
@@ -208,7 +211,21 @@ export default function Home() {
 
       {/* 使い方セクション */}
       <section className="mt-12 p-6 bg-primary-50 rounded-lg border border-primary-200">
-        <h2 className="text-xl font-bold text-gray-900 mb-4">使い方</h2>
+        <div className="flex justify-between items-start mb-4">
+          <h2 className="text-xl font-bold text-gray-900">使い方</h2>
+          {mounted && completedCount > 0 && (
+            <button
+              onClick={() => {
+                if (confirm('進捗をリセットしますか？')) {
+                  resetProgress();
+                }
+              }}
+              className="text-xs text-red-600 hover:text-red-700 underline"
+            >
+              進捗をリセット
+            </button>
+          )}
+        </div>
         <ul className="space-y-2 text-gray-700 list-disc list-inside">
           <li>各章を順番に学習していきます</li>
           <li>各章の最後にはクイズがあります</li>
