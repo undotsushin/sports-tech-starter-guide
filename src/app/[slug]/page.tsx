@@ -18,11 +18,12 @@ const contentSlugs = [
   '02-web-tech',
   '03-app-basics',
   '04-ad-marketing',
-  '05-security',
-  '06-practical',
-  '07-ai-usage',
-  '08-markdown',
-  '09-final-test',
+  '05-services',
+  '06-security',
+  '07-practical',
+  '08-ai-usage',
+  '09-markdown',
+  '10-final-test',
 ];
 
 // 静的パスを生成
