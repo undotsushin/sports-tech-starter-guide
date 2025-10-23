@@ -29,7 +29,6 @@ const contents = [
   { slug: '08-ai-usage', title: 'AI活用実践編', Icon: SparklesIcon, order: 8 },
   { slug: '09-markdown', title: 'マークダウン記法', Icon: DocumentTextIcon, order: 9 },
   { slug: '10-final-test', title: '総合テスト集', Icon: CheckCircleIcon, order: 10 },
-  { slug: '90-advanced-test', title: '総合テスト集【鬼】', Icon: CheckCircleIcon, order: 90 },
 ];
 
 interface SidebarProps {
