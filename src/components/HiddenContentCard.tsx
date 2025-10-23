@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { BoltIcon } from '@heroicons/react/24/outline';
+import { FireIcon } from '@heroicons/react/24/solid';
 
 export default function HiddenContentCard() {
   return (
@@ -9,7 +9,7 @@ export default function HiddenContentCard() {
     >
       <div className="flex items-start gap-4">
         <div className="flex-shrink-0 w-14 h-14 flex items-center justify-center bg-red-100 rounded-xl">
-          <BoltIcon className="w-8 h-8 text-red-600" />
+          <FireIcon className="w-8 h-8 text-red-600" />
         </div>
         <div className="flex-1">
           <h3 className="text-xl font-bold text-red-700 mb-2">
