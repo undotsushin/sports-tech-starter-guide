@@ -14,10 +14,298 @@ estimatedTime: 60
 
 **注意:** このテストは進捗には含まれません。完全に腕試しのための隠しコンテンツです。
 
+**難易度:** 応用情報技術者試験レベル
+**問題数:** 30問（全問正解を目指しましょう）
+**制限時間:** 60分推奨
+
 ---
 
-## 準備中
+<Quiz
+  questions={[
+    // ネットワーク・セキュリティ（10問）
+    {
+      question: "HTTPS通信において、クライアントとサーバー間の暗号化通信を確立する際、クライアント側で最初に送信されるメッセージは何か？",
+      options: [
+        { text: "ClientHello", isCorrect: true },
+        { text: "ServerHello", isCorrect: false },
+        { text: "Certificate", isCorrect: false },
+        { text: "Finished", isCorrect: false },
+      ],
+    },
+    {
+      question: "SQLインジェクション攻撃を防ぐために最も効果的な対策はどれか？",
+      options: [
+        { text: "プリペアドステートメント（パラメータ化クエリ）の使用", isCorrect: true },
+        { text: "入力値の文字数制限", isCorrect: false },
+        { text: "エラーメッセージの非表示化", isCorrect: false },
+        { text: "HTTPSの使用", isCorrect: false },
+      ],
+    },
+    {
+      question: "DNSのラウンドロビン方式による負荷分散の欠点として正しいものはどれか？",
+      options: [
+        { text: "サーバーの負荷状態を考慮せず、機械的に振り分けるため偏りが生じる可能性がある", isCorrect: true },
+        { text: "実装コストが非常に高い", isCorrect: false },
+        { text: "HTTPSに対応できない", isCorrect: false },
+        { text: "キャッシュサーバーと併用できない", isCorrect: false },
+      ],
+    },
+    {
+      question: "OAuth 2.0において、認可コードフロー（Authorization Code Flow）で使用されるアクセストークンを取得するために必要な情報として誤っているものはどれか？",
+      options: [
+        { text: "ユーザーのパスワード", isCorrect: true },
+        { text: "認可コード", isCorrect: false },
+        { text: "クライアントID", isCorrect: false },
+        { text: "クライアントシークレット", isCorrect: false },
+      ],
+    },
+    {
+      question: "CSRFトークンを用いたCSRF攻撃対策において、トークンを配置すべき場所として最も適切なのはどれか？",
+      options: [
+        { text: "フォームのhidden要素", isCorrect: true },
+        { text: "URLのクエリパラメータ", isCorrect: false },
+        { text: "Cookie", isCorrect: false },
+        { text: "LocalStorage", isCorrect: false },
+      ],
+    },
+    {
+      question: "同一生成元ポリシー（Same-Origin Policy）において、異なる生成元と判断される条件はどれか？",
+      options: [
+        { text: "プロトコル、ホスト、ポート番号のいずれかが異なる", isCorrect: true },
+        { text: "パスが異なる", isCorrect: false },
+        { text: "クエリパラメータが異なる", isCorrect: false },
+        { text: "フラグメント識別子が異なる", isCorrect: false },
+      ],
+    },
+    {
+      question: "JWTトークンの構造として正しいものはどれか？",
+      options: [
+        { text: "Header.Payload.Signature", isCorrect: true },
+        { text: "Type.Algorithm.Data", isCorrect: false },
+        { text: "Version.Claims.Hash", isCorrect: false },
+        { text: "Protocol.Body.Checksum", isCorrect: false },
+      ],
+    },
+    {
+      question: "RESTful APIの設計において、べき等性（Idempotency）を持つHTTPメソッドの組み合わせとして正しいものはどれか？",
+      options: [
+        { text: "GET, PUT, DELETE", isCorrect: true },
+        { text: "GET, POST, PUT", isCorrect: false },
+        { text: "POST, PUT, DELETE", isCorrect: false },
+        { text: "GET, POST, DELETE", isCorrect: false },
+      ],
+    },
+    {
+      question: "CDN（Content Delivery Network）のエッジサーバーがキャッシュを保持する主な目的として最も適切なものはどれか？",
+      options: [
+        { text: "ユーザーに物理的に近い場所からコンテンツを配信し、レイテンシを削減する", isCorrect: true },
+        { text: "オリジンサーバーのストレージ容量を節約する", isCorrect: false },
+        { text: "コンテンツの暗号化を強化する", isCorrect: false },
+        { text: "データベースへのアクセスを高速化する", isCorrect: false },
+      ],
+    },
+    {
+      question: "HTTPステータスコード「429 Too Many Requests」が返される状況として最も適切なのはどれか？",
+      options: [
+        { text: "レート制限により、クライアントからのリクエストが制限されている", isCorrect: true },
+        { text: "サーバー内部でエラーが発生した", isCorrect: false },
+        { text: "リクエストされたリソースが見つからない", isCorrect: false },
+        { text: "認証が必要だが提供されていない", isCorrect: false },
+      ],
+    },
+    // データベース・アルゴリズム（10問）
+    {
+      question: "RDBMSにおけるACID特性の「I」（Isolation：独立性）が保証する内容として正しいものはどれか？",
+      options: [
+        { text: "複数のトランザクションが並行実行されても、互いに影響を与えない", isCorrect: true },
+        { text: "トランザクションが完了すると、その結果が永続化される", isCorrect: false },
+        { text: "データの整合性が常に保たれる", isCorrect: false },
+        { text: "トランザクションは全て成功するか、全て失敗する", isCorrect: false },
+      ],
+    },
+    {
+      question: "B+木インデックスの特徴として正しいものはどれか？",
+      options: [
+        { text: "データは全て葉ノードに格納され、範囲検索に適している", isCorrect: true },
+        { text: "データは内部ノードと葉ノードの両方に格納される", isCorrect: false },
+        { text: "挿入・削除の計算量が常にO(1)である", isCorrect: false },
+        { text: "完全二分木構造を持つ", isCorrect: false },
+      ],
+    },
+    {
+      question: "データベースの正規化において、第3正規形（3NF）の条件として正しいものはどれか？",
+      options: [
+        { text: "第2正規形であり、かつ非キー属性が主キーに推移的に関数従属していない", isCorrect: true },
+        { text: "全ての属性が原子値である", isCorrect: false },
+        { text: "部分関数従属が存在しない", isCorrect: false },
+        { text: "複数値従属が存在しない", isCorrect: false },
+      ],
+    },
+    {
+      question: "NoSQLデータベースのうち、CAPの定理における「CP」（一貫性と分断耐性）を重視するデータベースはどれか？",
+      options: [
+        { text: "MongoDB", isCorrect: true },
+        { text: "Cassandra", isCorrect: false },
+        { text: "DynamoDB", isCorrect: false },
+        { text: "Riak", isCorrect: false },
+      ],
+    },
+    {
+      question: "ハッシュテーブルにおいて、衝突（collision）が発生した際の解決方法として「チェイン法」の説明として正しいものはどれか？",
+      options: [
+        { text: "同じハッシュ値を持つ要素をリンクリストで繋げて管理する", isCorrect: true },
+        { text: "次の空いているスロットを探して格納する", isCorrect: false },
+        { text: "ハッシュ関数を再計算して別のスロットに格納する", isCorrect: false },
+        { text: "ハッシュテーブルのサイズを動的に拡張する", isCorrect: false },
+      ],
+    },
+    {
+      question: "クイックソートの平均時間計算量として正しいものはどれか？",
+      options: [
+        { text: "O(n log n)", isCorrect: true },
+        { text: "O(n)", isCorrect: false },
+        { text: "O(n²)", isCorrect: false },
+        { text: "O(log n)", isCorrect: false },
+      ],
+    },
+    {
+      question: "ダイクストラ法（Dijkstra's algorithm）で解決できる問題として正しいものはどれか？",
+      options: [
+        { text: "重み付き有向グラフにおける単一始点最短経路問題（負の重みがない場合）", isCorrect: true },
+        { text: "全ての頂点間の最短経路問題", isCorrect: false },
+        { text: "最大流問題", isCorrect: false },
+        { text: "巡回セールスマン問題", isCorrect: false },
+      ],
+    },
+    {
+      question: "動的計画法（Dynamic Programming）の特徴として正しいものはどれか？",
+      options: [
+        { text: "部分問題の解を記憶し、重複計算を避けることで効率化する", isCorrect: true },
+        { text: "常に最適解を求めることができる貪欲法の一種である", isCorrect: false },
+        { text: "分割統治法と同じアプローチである", isCorrect: false },
+        { text: "再帰を使用せずに必ず反復で実装する", isCorrect: false },
+      ],
+    },
+    {
+      question: "深さ優先探索（DFS）をスタックを用いて実装する場合、次に訪問するノードを選択する基準として正しいものはどれか？",
+      options: [
+        { text: "スタックの先頭（最後に追加されたノード）から取り出す", isCorrect: true },
+        { text: "スタックの末尾（最初に追加されたノード）から取り出す", isCorrect: false },
+        { text: "ランダムに選択する", isCorrect: false },
+        { text: "コストが最小のノードを選択する", isCorrect: false },
+      ],
+    },
+    {
+      question: "ビット演算において、XOR（排他的論理和）の性質として正しいものはどれか？",
+      options: [
+        { text: "同じ値をXORすると0になる（A ⊕ A = 0）", isCorrect: true },
+        { text: "同じ値をXORすると1になる（A ⊕ A = 1）", isCorrect: false },
+        { text: "交換法則が成り立たない", isCorrect: false },
+        { text: "結合法則が成り立たない", isCorrect: false },
+      ],
+    },
+    // システム設計・アーキテクチャ（10問）
+    {
+      question: "マイクロサービスアーキテクチャの利点として正しいものはどれか？",
+      options: [
+        { text: "各サービスを独立してデプロイ・スケールでき、技術スタックも自由に選択できる", isCorrect: true },
+        { text: "サービス間通信のオーバーヘッドがなく、常に高速に動作する", isCorrect: false },
+        { text: "トランザクション管理が簡単になる", isCorrect: false },
+        { text: "デバッグが容易になる", isCorrect: false },
+      ],
+    },
+    {
+      question: "イベント駆動アーキテクチャにおいて、イベントソーシング（Event Sourcing）の説明として正しいものはどれか？",
+      options: [
+        { text: "状態の変更をイベントとして記録し、イベントの再生によって現在の状態を復元する", isCorrect: true },
+        { text: "イベントが発生するたびにデータベースの状態を直接更新する", isCorrect: false },
+        { text: "イベントを非同期で処理するためのキューイングシステム", isCorrect: false },
+        { text: "イベントの発生頻度を監視するモニタリング手法", isCorrect: false },
+      ],
+    },
+    {
+      question: "サーキットブレーカーパターンの目的として最も適切なものはどれか？",
+      options: [
+        { text: "障害が発生したサービスへのリクエストを一時的に遮断し、システム全体の障害を防ぐ", isCorrect: true },
+        { text: "リクエストのレスポンスを高速化する", isCorrect: false },
+        { text: "データの整合性を保証する", isCorrect: false },
+        { text: "認証・認可を強化する", isCorrect: false },
+      ],
+    },
+    {
+      question: "CQRSパターン（Command Query Responsibility Segregation）の説明として正しいものはどれか？",
+      options: [
+        { text: "データの読み取り（Query）と書き込み（Command）のモデルを分離する", isCorrect: true },
+        { text: "データベースのマスターとスレーブを分離する", isCorrect: false },
+        { text: "コマンドラインインターフェースとGUIを分離する", isCorrect: false },
+        { text: "クエリの実行順序を制御する", isCorrect: false },
+      ],
+    },
+    {
+      question: "12 Factor Appにおいて、設定情報（Config）の管理方法として推奨されているものはどれか？",
+      options: [
+        { text: "環境変数を使用して、コードと設定を分離する", isCorrect: true },
+        { text: "設定ファイルをGitリポジトリにコミットする", isCorrect: false },
+        { text: "ハードコーディングする", isCorrect: false },
+        { text: "データベースに格納する", isCorrect: false },
+      ],
+    },
+    {
+      question: "Blue-Greenデプロイメントの説明として正しいものはどれか？",
+      options: [
+        { text: "2つの同一環境（BlueとGreen）を用意し、切り替えることでダウンタイムなしにデプロイする", isCorrect: true },
+        { text: "新しいバージョンを段階的に一部のユーザーにのみ公開する", isCorrect: false },
+        { text: "複数のバージョンを並行稼働させる", isCorrect: false },
+        { text: "リリース後に問題があれば即座にロールバックする仕組み", isCorrect: false },
+      ],
+    },
+    {
+      question: "コンテナオーケストレーションツールであるKubernetesにおいて、Podの説明として正しいものはどれか？",
+      options: [
+        { text: "1つ以上のコンテナをまとめた最小のデプロイ単位", isCorrect: true },
+        { text: "コンテナイメージを保存するレジストリ", isCorrect: false },
+        { text: "外部からのトラフィックを制御するロードバランサー", isCorrect: false },
+        { text: "永続的なストレージボリューム", isCorrect: false },
+      ],
+    },
+    {
+      question: "GraphQL APIの特徴として正しいものはどれか？",
+      options: [
+        { text: "クライアントが必要なフィールドのみを指定してリクエストできる", isCorrect: true },
+        { text: "RESTful APIよりもセキュリティが常に高い", isCorrect: false },
+        { text: "HTTPメソッドにGET、POST、PUT、DELETEを使い分ける", isCorrect: false },
+        { text: "バージョニングが必須である", isCorrect: false },
+      ],
+    },
+    {
+      question: "Sagaパターンが解決しようとする問題として最も適切なものはどれか？",
+      options: [
+        { text: "分散システムにおける長期トランザクション（LLT）の管理", isCorrect: true },
+        { text: "データベースのロックタイムアウト", isCorrect: false },
+        { text: "APIのレート制限", isCorrect: false },
+        { text: "キャッシュの無効化", isCorrect: false },
+      ],
+    },
+    {
+      question: "サーバーレスアーキテクチャ（AWS Lambdaなど）の利点として誤っているものはどれか？",
+      options: [
+        { text: "常に最高のパフォーマンスが保証される", isCorrect: true },
+        { text: "サーバー管理が不要でインフラの運用負担が軽減される", isCorrect: false },
+        { text: "使用した分だけ課金されるため、アイドル時間のコストがかからない", isCorrect: false },
+        { text: "自動スケーリングが可能", isCorrect: false },
+      ],
+    },
+  ]}
+/>
 
-現在、応用情報技術者試験レベルの難問30問を準備中です。
+---
 
-しばらくお待ちください。
+## 合格基準
+
+**30問全問正解を目指しましょう**
+
+このテストは応用情報技術者試験レベルの難問です。全問正解できれば、運動通信社の社員として十分な技術知識を持っていると言えます。
+
+間違えた問題があれば、該当する技術分野について更に学習を深めましょう。
+
+**更なる高みを目指して、挑戦し続けてください！**
