@@ -199,10 +199,12 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 隠しコンテンツカード */}
-      <section className="mt-8">
-        <HiddenContentCard />
-      </section>
+      {/* 隠しコンテンツカード - 2章以上完了で表示 */}
+      {completedCount >= 2 && (
+        <section className="mt-8">
+          <HiddenContentCard />
+        </section>
+      )}
 
       {/* 使い方セクション */}
       <section className="mt-12 p-6 bg-primary-50 rounded-lg border border-primary-200">

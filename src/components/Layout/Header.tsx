@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { useProgress } from '@/hooks/useProgress';
 
-const TOTAL_CHAPTERS = 9;
+const TOTAL_CHAPTERS = 10;
 
 interface HeaderProps {
   onMenuToggle?: () => void;
