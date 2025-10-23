@@ -190,7 +190,7 @@ sports-tech-starter-guide/
 
 ## ライセンス
 
-ISC
+MIT License - 詳細は [LICENSE](LICENSE) ファイルを参照してください。
 
 ## 作成者
 
