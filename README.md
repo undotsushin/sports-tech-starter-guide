@@ -46,14 +46,14 @@ npm install
 npm run dev
 ```
 
-開発サーバーが起動したら、ブラウザで `http://localhost:3000` を開いてください。
+開発サーバーが起動したら、ブラウザで `http://localhost:2026` を開いてください。
 
 ### 利用可能なコマンド
 
 ```bash
-npm run dev      # 開発サーバー起動（ホットリロード有効）
+npm run dev      # 開発サーバー起動（ポート2026、ホットリロード有効）
 npm run build    # 本番用ビルド（静的サイト生成）
-npm run start    # ビルド後のプレビュー
+npm run start    # ビルド後のプレビュー（ポート2026）
 npm run lint     # コードの静的解析
 ```
 
@@ -128,7 +128,7 @@ estimatedTime: 30
 
 mainブランチへのpush時に自動的にGitHub Pagesにデプロイされます。
 
-デプロイURL: `https://undotsushin.github.io/sports-tech-starter-guide/`
+デプロイURL: [https://undotsushin.github.io/sports-tech-starter-guide/](https://undotsushin.github.io/sports-tech-starter-guide/)
 
 ### 手動デプロイ
 
