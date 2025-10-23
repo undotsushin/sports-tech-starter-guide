@@ -9,6 +9,7 @@ import {
   GlobeAltIcon,
   DevicePhoneMobileIcon,
   ChartBarIcon,
+  CloudIcon,
   ShieldCheckIcon,
   BriefcaseIcon,
   SparklesIcon,
@@ -22,11 +23,12 @@ const contents = [
   { slug: '02-web-tech', title: 'Web技術基礎', Icon: GlobeAltIcon, order: 2 },
   { slug: '03-app-basics', title: 'アプリ基礎知識', Icon: DevicePhoneMobileIcon, order: 3 },
   { slug: '04-ad-marketing', title: '広告・マーケティング技術', Icon: ChartBarIcon, order: 4 },
-  { slug: '05-security', title: 'セキュリティ基礎', Icon: ShieldCheckIcon, order: 5 },
-  { slug: '06-practical', title: '実践シチュエーション集', Icon: BriefcaseIcon, order: 6 },
-  { slug: '07-ai-usage', title: 'AI活用実践編', Icon: SparklesIcon, order: 7 },
-  { slug: '08-markdown', title: 'マークダウン記法', Icon: DocumentTextIcon, order: 8 },
-  { slug: '09-final-test', title: '総合テスト集', Icon: CheckCircleIcon, order: 9 },
+  { slug: '05-services', title: 'サービス・システム基礎', Icon: CloudIcon, order: 5 },
+  { slug: '06-security', title: 'セキュリティ基礎', Icon: ShieldCheckIcon, order: 6 },
+  { slug: '07-practical', title: '実践シチュエーション集', Icon: BriefcaseIcon, order: 7 },
+  { slug: '08-ai-usage', title: 'AI活用実践編', Icon: SparklesIcon, order: 8 },
+  { slug: '09-markdown', title: 'マークダウン記法', Icon: DocumentTextIcon, order: 9 },
+  { slug: '10-final-test', title: '総合テスト集', Icon: CheckCircleIcon, order: 10 },
 ];
 
 interface SidebarProps {
