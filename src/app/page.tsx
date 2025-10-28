@@ -121,7 +121,7 @@ export default function Home() {
           運動通信社 Sports Tech Starter Guide
         </h1>
         <p className="text-lg md:text-xl text-gray-700 mb-8 max-w-3xl mx-auto">
-          新卒社員として知っておくべきIT・Web・デザイン・マーケティングの知識を学ぼう
+          社員として知っておくべきIT・Web・デザイン・マーケティングの知識を学ぼう
         </p>
 
         {/* 進捗バー */}

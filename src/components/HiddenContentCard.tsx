@@ -19,7 +19,7 @@ export default function HiddenContentCard() {
             運動通信社社員として更なる高みを目指すあなたへ。応用情報技術者試験レベルの難問30問があなたを待っています。
           </p>
           <span className="inline-block text-sm font-semibold text-red-600 bg-red-100 px-4 py-2 rounded-full">
-            🔥 鬼レベルに挑戦する →
+            鬼レベルに挑戦する →
           </span>
         </div>
       </div>
