@@ -16,21 +16,21 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/undotsushin/sports-tech-starter-guide/issues"
   },
   "homepage": "https://github.com/undotsushin/sports-tech-starter-guide#readme",
   "dependencies": {
     "@heroicons/react": "^2.2.0",
-    "@next/mdx": "^15.5.6",
+    "@next/mdx": "^16.1.6",
     "@tailwindcss/postcss": "^4.1.15",
     "gray-matter": "^4.0.3",
-    "next": "^15.5.6",
+    "next": "^16.1.6",
     "next-mdx-remote": "^5.0.0",
     "prismjs": "^1.30.0",
-    "react": "^19.2.0",
-    "react-dom": "^19.2.0",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
     "rehype-prism-plus": "^2.0.1",
     "remark-gfm": "^4.0.1",
     "tailwindcss": "^4.1.15"
