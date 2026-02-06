@@ -17,8 +17,8 @@
 
 ## 技術スタック
 
-- **Framework**: [Next.js 15.5.6](https://nextjs.org/) (App Router, SSG)
-- **UI Library**: [React 19.2](https://react.dev/)
+- **Framework**: [Next.js 16.1.6](https://nextjs.org/) (App Router, SSG, Turbopack)
+- **UI Library**: [React 19.2.4](https://react.dev/)
 - **Styling**: [Tailwind CSS v4](https://tailwindcss.com/)
 - **Icons**: [Heroicons](https://heroicons.com/)
 - **Content**: MDX (Markdown + React components)
