@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=700">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #f8f9fa; font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', sans-serif; display: flex; justify-content: center; padding: 20px; }
+.card { background: #fff; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); padding: 28px 32px; width: 640px; }
+h2 { font-size: 18px; color: #333; margin-bottom: 16px; text-align: center; }
+.cols { display: flex; gap: 16px; }
+.col { flex: 1; }
+.col-title { font-size: 14px; font-weight: bold; margin-bottom: 10px; padding: 8px 12px; border-radius: 8px 8px 0 0; text-align: center; }
+.col:first-child .col-title { background: #e3f2fd; color: #1565c0; }
+.col:last-child .col-title { background: #fff3e0; color: #e65100; }
+.items { list-style: none; }
+.items li { padding: 7px 12px; font-size: 13px; color: #444; border-bottom: 1px solid #f0f0f0; display: flex; align-items: center; gap: 6px; }
+.items li:last-child { border-bottom: none; }
+.dot1 { color: #1976d2; }
+.dot2 { color: #ff9800; }
+.note { font-size: 11px; color: #888; }
+</style>
+</head>
+<body>
+<div class="card" id="target">
+  <h2>個人情報の例</h2>
+  <div class="cols">
+    <div class="col">
+      <div class="col-title">明らかに個人情報</div>
+      <ul class="items">
+        <li><span class="dot1">●</span>氏名</li>
+        <li><span class="dot1">●</span>住所</li>
+        <li><span class="dot1">●</span>電話番号</li>
+        <li><span class="dot1">●</span>メールアドレス</li>
+        <li><span class="dot1">●</span>マイナンバー</li>
+        <li><span class="dot1">●</span>クレジットカード番号</li>
+        <li><span class="dot1">●</span>銀行口座</li>
+        <li><span class="dot1">●</span>顔写真</li>
+      </ul>
+    </div>
+    <div class="col">
+      <div class="col-title">実は個人情報</div>
+      <ul class="items">
+        <li><span class="dot2">●</span>IPアドレス <span class="note">※特定個人と紐付く場合</span></li>
+        <li><span class="dot2">●</span>Cookie ID <span class="note">※特定個人と紐付く場合</span></li>
+        <li><span class="dot2">●</span>位置情報</li>
+        <li><span class="dot2">●</span>購買履歴</li>
+        <li><span class="dot2">●</span>閲覧履歴</li>
+      </ul>
+    </div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<style>
+  body { margin: 0; padding: 40px; background: #f8f9fa; font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', sans-serif; }
+  .container { max-width: 700px; margin: 0 auto; text-align: center; }
+  .domain { font-size: 36px; font-weight: bold; letter-spacing: 2px; margin: 30px 0 20px; font-family: 'Courier New', monospace; }
+  .domain .sub { color: #e65100; }
+  .domain .second { color: #1565c0; }
+  .domain .tld { color: #2e7d32; }
+  .domain .dot { color: #666; }
+  .labels { display: flex; justify-content: center; gap: 0; margin-bottom: 30px; }
+  .label-group { text-align: center; }
+  .label-arrow { font-size: 24px; color: #999; }
+  .label-text { font-size: 14px; font-weight: bold; padding: 6px 16px; border-radius: 20px; display: inline-block; margin-top: 4px; }
+  .label-orange { background: #fff3e0; color: #e65100; border: 1px solid #e65100; }
+  .label-blue { background: #e3f2fd; color: #1565c0; border: 1px solid #1565c0; }
+  .label-green { background: #e8f5e9; color: #2e7d32; border: 1px solid #2e7d32; }
+  .explain { margin-top: 20px; text-align: left; background: white; border-radius: 12px; padding: 20px 24px; border: 1px solid #e0e0e0; }
+  .explain-row { display: flex; align-items: center; padding: 8px 0; border-bottom: 1px solid #f0f0f0; }
+  .explain-row:last-child { border-bottom: none; }
+  .explain-dot { width: 12px; height: 12px; border-radius: 50%; margin-right: 12px; flex-shrink: 0; }
+  .dot-orange { background: #e65100; }
+  .dot-blue { background: #1565c0; }
+  .dot-green { background: #2e7d32; }
+  .explain-label { font-weight: bold; width: 160px; font-size: 14px; }
+  .explain-desc { color: #666; font-size: 13px; }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="domain">
+    <span class="sub">blog</span><span class="dot">.</span><span class="second">sportsbull</span><span class="dot">.</span><span class="tld">jp</span>
+  </div>
+
+  <div style="display:flex; justify-content:center; gap: 60px; margin-bottom: 8px;">
+    <div class="label-group">
+      <div class="label-arrow">↑</div>
+      <div class="label-text label-orange">サブドメイン</div>
+    </div>
+    <div class="label-group">
+      <div class="label-arrow">↑</div>
+      <div class="label-text label-blue">セカンドレベル</div>
+    </div>
+    <div class="label-group">
+      <div class="label-arrow">↑</div>
+      <div class="label-text label-green">トップレベル</div>
+    </div>
+  </div>
+
+  <div class="explain">
+    <div class="explain-row">
+      <div class="explain-dot dot-green"></div>
+      <div class="explain-label">.jp / .com / .org</div>
+      <div class="explain-desc">国や用途を示す（.jp = 日本、.com = 商用、.org = 組織）</div>
+    </div>
+    <div class="explain-row">
+      <div class="explain-dot dot-blue"></div>
+      <div class="explain-label">sportsbull</div>
+      <div class="explain-desc">企業やサービスの名前</div>
+    </div>
+    <div class="explain-row">
+      <div class="explain-dot dot-orange"></div>
+      <div class="explain-label">blog</div>
+      <div class="explain-desc">用途別に分けた部分（blog、shop、apiなど）</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

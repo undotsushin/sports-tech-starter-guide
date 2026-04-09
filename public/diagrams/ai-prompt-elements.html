@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<style>
+  body { margin: 0; padding: 32px; background: #f8f9fa; font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', sans-serif; }
+  .container { max-width: 620px; margin: 0 auto; }
+  h2 { text-align: center; color: #333; font-size: 18px; margin-bottom: 24px; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .card { background: white; border-radius: 12px; padding: 16px 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); display: flex; align-items: flex-start; gap: 14px; }
+  .num { background: #6366f1; color: white; width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 15px; font-weight: bold; flex-shrink: 0; }
+  .text h3 { margin: 0 0 4px 0; font-size: 14px; color: #333; }
+  .text .en { font-size: 11px; color: #6366f1; font-weight: 600; margin-bottom: 4px; }
+  .text p { margin: 0; font-size: 12px; color: #888; }
+</style>
+</head>
+<body>
+<div class="container">
+  <h2>良いプロンプトの6要素</h2>
+  <div class="grid">
+    <div class="card">
+      <div class="num">1</div>
+      <div class="text">
+        <h3>役割設定</h3>
+        <div class="en">Role</div>
+        <p>「あなたは○○の専門家です」</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="num">2</div>
+      <div class="text">
+        <h3>具体的指示</h3>
+        <div class="en">Task</div>
+        <p>「××を作成してください」</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="num">3</div>
+      <div class="text">
+        <h3>背景情報</h3>
+        <div class="en">Context</div>
+        <p>「△△という状況で」</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="num">4</div>
+      <div class="text">
+        <h3>制約条件</h3>
+        <div class="en">Constraints</div>
+        <p>「□□以内で」「□□を含めて」</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="num">5</div>
+      <div class="text">
+        <h3>出力形式</h3>
+        <div class="en">Format</div>
+        <p>「リスト形式で」「表で」</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="num">6</div>
+      <div class="text">
+        <h3>例示</h3>
+        <div class="en">Examples</div>
+        <p>「このような形式で」</p>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

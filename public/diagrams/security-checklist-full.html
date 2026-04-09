@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=700">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #f8f9fa; font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', sans-serif; display: flex; justify-content: center; padding: 16px; }
+.card { background: #fff; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); padding: 24px 28px; width: 660px; }
+h2 { font-size: 17px; color: #333; margin-bottom: 16px; text-align: center; }
+.section { margin-bottom: 12px; }
+.section:last-child { margin-bottom: 0; }
+.section-title { font-size: 13px; font-weight: bold; color: #fff; padding: 6px 12px; border-radius: 6px; margin-bottom: 6px; }
+.s1 .section-title { background: #1976d2; }
+.s2 .section-title { background: #2e7d32; }
+.s3 .section-title { background: #d32f2f; }
+.s4 .section-title { background: #7b1fa2; }
+.s5 .section-title { background: #e65100; }
+.s6 .section-title { background: #00838f; }
+.items { list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 3px 10px; }
+.items li { display: flex; align-items: center; gap: 6px; padding: 4px 8px; font-size: 12px; color: #333; background: #fafafa; border-radius: 4px; }
+.check { color: #1976d2; font-size: 12px; flex-shrink: 0; }
+</style>
+</head>
+<body>
+<div class="card" id="target">
+  <h2>セキュリティチェックリスト</h2>
+  <div class="section s1">
+    <div class="section-title">パスワード</div>
+    <ul class="items">
+      <li><span class="check">☐</span>パスワードは暗号化して保存（bcrypt、Argon2等）</li>
+      <li><span class="check">☐</span>パスワードの強度チェック（8文字以上、複雑さ）</li>
+      <li><span class="check">☐</span>パスワードリセット機能</li>
+      <li><span class="check">☐</span>二要素認証の実装</li>
+    </ul>
+  </div>
+  <div class="section s2">
+    <div class="section-title">個人情報保護</div>
+    <ul class="items">
+      <li><span class="check">☐</span>プライバシーポリシーの掲載</li>
+      <li><span class="check">☐</span>SSL/TLS（https）の導入</li>
+      <li><span class="check">☐</span>個人情報の暗号化</li>
+      <li><span class="check">☐</span>アクセスログの記録</li>
+    </ul>
+  </div>
+  <div class="section s3">
+    <div class="section-title">Web攻撃対策</div>
+    <ul class="items">
+      <li><span class="check">☐</span>SQLインジェクション対策</li>
+      <li><span class="check">☐</span>XSS対策（エスケープ処理）</li>
+      <li><span class="check">☐</span>CSRF対策（トークン）</li>
+      <li><span class="check">☐</span>クリックジャッキング対策</li>
+    </ul>
+  </div>
+  <div class="section s4">
+    <div class="section-title">アクセス制御</div>
+    <ul class="items">
+      <li><span class="check">☐</span>適切な権限管理</li>
+      <li><span class="check">☐</span>セッションタイムアウト</li>
+      <li><span class="check">☐</span>ログイン試行回数の制限</li>
+      <li><span class="check">☐</span>IPアドレス制限（管理画面）</li>
+    </ul>
+  </div>
+  <div class="section s5">
+    <div class="section-title">データ管理</div>
+    <ul class="items">
+      <li><span class="check">☐</span>定期的なバックアップ</li>
+      <li><span class="check">☐</span>バックアップからの復元テスト</li>
+      <li><span class="check">☐</span>不要なデータの削除</li>
+      <li><span class="check">☐</span>ログの保存期間を設定</li>
+    </ul>
+  </div>
+  <div class="section s6">
+    <div class="section-title">開発・運用</div>
+    <ul class="items">
+      <li><span class="check">☐</span>最新のセキュリティパッチ適用</li>
+      <li><span class="check">☐</span>不要なポートを閉じる</li>
+      <li><span class="check">☐</span>エラーメッセージを詳しく出さない</li>
+      <li><span class="check">☐</span>セキュリティ診断の実施</li>
+    </ul>
+  </div>
+</div>
+</body>
+</html>

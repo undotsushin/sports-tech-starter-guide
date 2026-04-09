@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=700">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #f8f9fa; font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', sans-serif; display: flex; justify-content: center; padding: 20px; }
+.card { background: #fff; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); padding: 28px 32px; width: 640px; }
+h2 { font-size: 18px; color: #333; margin-bottom: 16px; text-align: center; }
+.cols { display: flex; gap: 16px; }
+.bad { flex: 1; background: #ffebee; border: 2px solid #ef5350; border-radius: 10px; padding: 16px; }
+.good { flex: 1; background: #e8f5e9; border: 2px solid #66bb6a; border-radius: 10px; padding: 16px; }
+.label { font-size: 14px; font-weight: bold; margin-bottom: 8px; }
+.bad .label { color: #d32f2f; }
+.good .label { color: #2e7d32; }
+.text { font-size: 13px; color: #333; line-height: 1.7; }
+</style>
+</head>
+<body>
+<div class="card" id="target">
+  <h2>利用目的の明示</h2>
+  <div class="cols">
+    <div class="bad">
+      <div class="label">× 悪い例</div>
+      <div class="text">「個人情報を取得します」</div>
+    </div>
+    <div class="good">
+      <div class="label">○ 良い例</div>
+      <div class="text">「以下の目的で個人情報を利用します<br>1. 商品の配送<br>2. メールマガジンの配信<br>3. アフターサービスのご案内」</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

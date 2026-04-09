@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<style>
+  body { margin: 0; padding: 40px; background: #f8f9fa; font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', sans-serif; }
+  .container { max-width: 700px; margin: 0 auto; }
+  .title { text-align: center; font-size: 18px; font-weight: bold; color: #333; margin-bottom: 24px; }
+  .arrow-down { text-align: center; font-size: 28px; color: #666; margin: 12px 0; }
+  .box { border-radius: 12px; padding: 20px 24px; margin-bottom: 8px; display: flex; align-items: center; justify-content: space-between; }
+  .box-blue { background: #e3f2fd; border: 2px solid #1976d2; }
+  .box-green { background: #e8f5e9; border: 2px solid #388e3c; }
+  .box-label { font-size: 16px; font-weight: bold; color: #333; }
+  .box-sub { font-size: 13px; color: #666; margin-top: 4px; }
+  .box-result { font-size: 14px; font-weight: bold; padding: 8px 16px; border-radius: 20px; white-space: nowrap; }
+  .result-modern { background: #1976d2; color: white; }
+  .result-legacy { background: #388e3c; color: white; }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="title">ターゲットユーザーの分析</div>
+  <div class="arrow-down">▼</div>
+
+  <div class="box box-blue">
+    <div>
+      <div class="box-label">一般消費者向けサービス？</div>
+      <div class="box-sub">EC、メディア、SNSなど</div>
+    </div>
+    <div class="box-result result-modern">→ モダンブラウザのみ対応<br><span style="font-weight:normal;font-size:12px">コスト削減・最新機能が使える</span></div>
+  </div>
+
+  <div class="arrow-down">▼</div>
+
+  <div class="box box-green">
+    <div>
+      <div class="box-label">企業・官公庁向けサービス？</div>
+      <div class="box-sub">BtoB、行政システムなど</div>
+    </div>
+    <div class="box-result result-legacy">→ レガシー対応が必要な場合も<br><span style="font-weight:normal;font-size:12px">古いPC環境が残っている</span></div>
+  </div>
+</div>
+</body>
+</html>

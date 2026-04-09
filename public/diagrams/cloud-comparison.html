@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IaaS vs PaaS vs SaaS 比較表</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #f8f9fa; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', sans-serif; }
+  #diagram {
+    padding: 24px;
+    max-width: 680px;
+  }
+  h2 { font-size: 18px; color: #333; margin-bottom: 16px; }
+  table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #e0e0e0;
+  }
+  th {
+    padding: 12px 16px;
+    font-size: 13px;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+  }
+  th:first-child { background: #5f6368; text-align: left; }
+  th:nth-child(2) { background: #ea4335; }
+  th:nth-child(3) { background: #fbbc04; color: #333; }
+  th:nth-child(4) { background: #34a853; }
+  td {
+    padding: 10px 16px;
+    font-size: 13px;
+    color: #333;
+    border-bottom: 1px solid #f0f0f0;
+    text-align: center;
+  }
+  td:first-child { text-align: left; font-weight: 600; color: #555; }
+  tr:last-child td { border-bottom: none; }
+  tr:hover td { background: #f8f9fa; }
+</style>
+</head>
+<body>
+<div id="diagram">
+  <h2>IaaS vs PaaS vs SaaS 比較表</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>項目</th>
+        <th>IaaS</th>
+        <th>PaaS</th>
+        <th>SaaS</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>自由度</td><td>高</td><td>中</td><td>低</td></tr>
+      <tr><td>管理の手間</td><td>大</td><td>中</td><td>小</td></tr>
+      <tr><td>初期費用</td><td>低</td><td>低</td><td>極小</td></tr>
+      <tr><td>専門知識</td><td>必要</td><td>やや必要</td><td>不要</td></tr>
+      <tr><td>例</td><td>AWS EC2</td><td>Heroku</td><td>Slack</td></tr>
+    </tbody>
+  </table>
+</div>
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>サービス選択フロー</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #f8f9fa; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', sans-serif; }
+  #diagram {
+    padding: 24px;
+    max-width: 680px;
+  }
+  h2 { font-size: 18px; color: #333; margin-bottom: 20px; }
+  .flow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+  .question {
+    background: #1a73e8;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+  }
+  .branches {
+    display: flex;
+    gap: 40px;
+    position: relative;
+    margin-top: 0;
+  }
+  .branch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+  .arrow-down {
+    width: 2px;
+    height: 20px;
+    background: #999;
+    position: relative;
+  }
+  .arrow-down::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: -4px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid #999;
+  }
+  .label {
+    font-size: 12px;
+    font-weight: 600;
+    color: #555;
+    padding: 4px 8px;
+  }
+  .label.yes { color: #34a853; }
+  .label.no { color: #d93025; }
+  .result {
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 700;
+    text-align: center;
+  }
+  .result.saas { background: #e6f4ea; color: #34a853; border: 2px solid #34a853; }
+  .result.paas { background: #fef7e0; color: #e37400; border: 2px solid #fbbc04; }
+  .result.iaas { background: #fce8e6; color: #d93025; border: 2px solid #ea4335; }
+  .result-sub { font-size: 11px; font-weight: 400; color: #777; margin-top: 4px; }
+  .connector-h {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+  }
+  .sub-question {
+    background: #fff;
+    border: 2px solid #1a73e8;
+    color: #1a73e8;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
+  }
+  .sub-question2 {
+    background: #fff;
+    border: 2px solid #5f6368;
+    color: #5f6368;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+<div id="diagram">
+  <h2>サービス選択フロー</h2>
+  <div class="flow">
+    <div class="question">既製品で十分？</div>
+    <div style="display:flex; gap: 120px;">
+      <div class="branch">
+        <div class="arrow-down"></div>
+        <div class="label yes">YES</div>
+        <div class="arrow-down"></div>
+        <div class="result saas">SaaS<div class="result-sub">例: Slack、freee</div></div>
+      </div>
+      <div class="branch">
+        <div class="arrow-down"></div>
+        <div class="label no">NO</div>
+        <div class="arrow-down"></div>
+        <div class="sub-question">独自開発が必要？</div>
+        <div style="display:flex; gap: 60px;">
+          <div class="branch">
+            <div class="arrow-down"></div>
+            <div class="label yes">YES</div>
+            <div class="arrow-down"></div>
+            <div class="sub-question2">細かい制御が必要？</div>
+            <div style="display:flex; gap: 40px;">
+              <div class="branch">
+                <div class="arrow-down"></div>
+                <div class="label yes">YES</div>
+                <div class="arrow-down"></div>
+                <div class="result iaas">IaaS<div class="result-sub">例: AWS EC2</div></div>
+              </div>
+              <div class="branch">
+                <div class="arrow-down"></div>
+                <div class="label no">NO</div>
+                <div class="arrow-down"></div>
+                <div class="result paas">PaaS<div class="result-sub">例: Heroku</div></div>
+              </div>
+            </div>
+          </div>
+          <div class="branch">
+            <div class="arrow-down"></div>
+            <div class="label no">NO</div>
+            <div class="arrow-down"></div>
+            <div class="result saas">SaaS<div class="result-sub">例: Slack、freee</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

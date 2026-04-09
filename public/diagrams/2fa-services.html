@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=700">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #f8f9fa; font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', sans-serif; display: flex; justify-content: center; padding: 20px; }
+.card { background: #fff; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); padding: 28px 32px; width: 640px; }
+h2 { font-size: 18px; color: #333; margin-bottom: 16px; text-align: center; }
+.list { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.item { display: flex; align-items: center; gap: 10px; padding: 10px 14px; background: #f5f5f5; border-radius: 8px; font-size: 14px; color: #333; }
+.check { color: #1976d2; font-size: 18px; flex-shrink: 0; }
+</style>
+</head>
+<body>
+<div class="card" id="target">
+  <h2>必ず二要素認証を設定すべきサービス</h2>
+  <div class="list">
+    <div class="item"><span class="check">☐</span>Gmail（メール）</div>
+    <div class="item"><span class="check">☐</span>AWS / GCP / Azure（クラウド）</div>
+    <div class="item"><span class="check">☐</span>GitHub（コード管理）</div>
+    <div class="item"><span class="check">☐</span>Slack（社内チャット）</div>
+    <div class="item"><span class="check">☐</span>銀行・証券口座</div>
+    <div class="item"><span class="check">☐</span>クレジットカード会社</div>
+  </div>
+</div>
+</body>
+</html>

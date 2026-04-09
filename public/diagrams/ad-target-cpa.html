@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<style>
+  body { margin: 0; padding: 30px; background: #f8f9fa; font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', sans-serif; }
+  .card { max-width: 520px; margin: 0 auto; background: white; border-radius: 12px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); padding: 24px; }
+  .title { font-size: 15px; font-weight: bold; color: #333; text-align: center; margin-bottom: 16px; }
+  .steps { display: flex; align-items: center; justify-content: center; gap: 8px; }
+  .step { padding: 12px 16px; border-radius: 10px; text-align: center; font-size: 13px; }
+  .step-item { background: #e3f2fd; border: 1px solid #1565c0; }
+  .step-label { font-size: 11px; color: #888; }
+  .step-value { font-size: 16px; font-weight: bold; color: #1565c0; }
+  .arrow { font-size: 20px; color: #999; }
+  .result { margin-top: 16px; padding: 12px; background: #e8f5e9; border-radius: 8px; text-align: center; font-size: 14px; font-weight: bold; color: #2e7d32; }
+</style>
+</head>
+<body>
+<div class="card" id="diagram">
+  <div class="title">目標CPAの決め方</div>
+  <div class="steps">
+    <div class="step step-item">
+      <div class="step-label">商品価格</div>
+      <div class="step-value">10,000円</div>
+    </div>
+    <div class="arrow">→</div>
+    <div class="step step-item">
+      <div class="step-label">利益率 30%</div>
+      <div class="step-value">利益 3,000円</div>
+    </div>
+    <div class="arrow">→</div>
+    <div class="step step-item">
+      <div class="step-label">目標CPA</div>
+      <div class="step-value">3,000円以下</div>
+    </div>
+  </div>
+  <div class="result">CPA ≦ 3,000円 なら黒字</div>
+</div>
+</body>
+</html>

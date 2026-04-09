@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #f8f9fa; font-family: -apple-system, 'Hiragino Sans', 'Meiryo', sans-serif; display: flex; justify-content: center; padding: 24px; }
+  .container { max-width: 520px; width: 100%; }
+  .priority { background: #fff; border-radius: 12px; padding: 14px 20px; margin-bottom: 12px; border-left: 5px solid; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+  .priority-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+  .priority-label { font-size: 14px; font-weight: 700; }
+  .priority-action { font-size: 12px; padding: 3px 10px; border-radius: 20px; color: #fff; font-weight: 600; }
+  .priority ul { list-style: none; padding: 0; }
+  .priority ul li { font-size: 13px; color: #555; line-height: 1.8; padding-left: 14px; position: relative; }
+  .priority ul li::before { content: '•'; position: absolute; left: 2px; font-weight: 700; }
+  .high { border-color: #E74C3C; }
+  .high .priority-label { color: #E74C3C; }
+  .high .priority-action { background: #E74C3C; }
+  .high li::before { color: #E74C3C; }
+  .med { border-color: #F5A623; }
+  .med .priority-label { color: #F5A623; }
+  .med .priority-action { background: #F5A623; }
+  .med li::before { color: #F5A623; }
+  .low { border-color: #4A90D9; }
+  .low .priority-label { color: #4A90D9; }
+  .low .priority-action { background: #4A90D9; }
+  .low li::before { color: #4A90D9; }
+</style>
+</head>
+<body>
+<div class="container" id="diagram">
+  <div class="priority high">
+    <div class="priority-header">
+      <span class="priority-label">優先度: 高 - すぐに修正が必要</span>
+      <span class="priority-action">至急対応</span>
+    </div>
+    <ul>
+      <li>サービスが使えない</li>
+      <li>個人情報が漏れる可能性</li>
+      <li>決済ができない</li>
+      <li>全ユーザーに影響</li>
+    </ul>
+  </div>
+  <div class="priority med">
+    <div class="priority-header">
+      <span class="priority-label">優先度: 中 - できるだけ早く修正</span>
+      <span class="priority-action">1週間以内</span>
+    </div>
+    <ul>
+      <li>一部の機能が使えない</li>
+      <li>特定の環境でのみ発生</li>
+      <li>ユーザー体験が悪化</li>
+    </ul>
+  </div>
+  <div class="priority low">
+    <div class="priority-header">
+      <span class="priority-label">優先度: 低 - 時間のある時に修正</span>
+      <span class="priority-action">次回更新</span>
+    </div>
+    <ul>
+      <li>見た目の問題 (文字のズレ等)</li>
+      <li>稀にしか発生しない</li>
+      <li>回避策がある</li>
+    </ul>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<style>
+  body { margin: 0; padding: 40px; background: #f8f9fa; font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', sans-serif; }
+  .container { max-width: 600px; margin: 0 auto; }
+  .flow { display: flex; align-items: center; justify-content: center; gap: 8px; }
+  .box { padding: 12px 16px; border-radius: 10px; text-align: center; font-weight: bold; font-size: 13px; }
+  .box-advertiser { background: #e3f2fd; border: 2px solid #1565c0; color: #1565c0; }
+  .box-dsp { background: #fff3e0; border: 2px solid #e65100; color: #e65100; }
+  .box-exchange { background: #f3e5f5; border: 2px solid #6a1b9a; color: #6a1b9a; }
+  .box-ssp { background: #e8f5e9; border: 2px solid #2e7d32; color: #2e7d32; }
+  .box-site { background: #e3f2fd; border: 2px solid #1565c0; color: #1565c0; }
+  .arrow { font-size: 20px; color: #999; }
+  .sub { font-size: 10px; color: #888; font-weight: normal; display: block; margin-top: 2px; }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="flow">
+    <div class="box box-advertiser">広告主</div>
+    <div class="arrow">→</div>
+    <div class="box box-dsp">DSP<span class="sub">買う側</span></div>
+    <div class="arrow">←→</div>
+    <div class="box box-exchange">アド<br>エクスチェンジ<span class="sub">市場</span></div>
+    <div class="arrow">←→</div>
+    <div class="box box-ssp">SSP<span class="sub">売る側</span></div>
+    <div class="arrow">←</div>
+    <div class="box box-site">Webサイト</div>
+  </div>
+</div>
+</body>
+</html>

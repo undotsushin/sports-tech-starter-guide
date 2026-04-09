@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<style>
+  body { margin: 0; padding: 40px; background: #f8f9fa; font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', sans-serif; }
+  .container { max-width: 620px; margin: 0 auto; }
+  .title { text-align: center; font-size: 14px; color: #666; margin-bottom: 16px; }
+  .cards { display: flex; gap: 12px; }
+  .card { flex: 1; border-radius: 10px; padding: 14px; text-align: center; }
+  .card-onpre { background: #ffebee; border: 2px solid #c62828; }
+  .card-iaas { background: #fff3e0; border: 2px solid #e65100; }
+  .card-paas { background: #e3f2fd; border: 2px solid #1565c0; }
+  .card-saas { background: #e8f5e9; border: 2px solid #2e7d32; }
+  .card-name { font-size: 15px; font-weight: bold; margin-bottom: 4px; }
+  .name-onpre { color: #c62828; }
+  .name-iaas { color: #e65100; }
+  .name-paas { color: #1565c0; }
+  .name-saas { color: #2e7d32; }
+  .card-sub { font-size: 11px; color: #888; margin-bottom: 10px; }
+  .card-desc { font-size: 12px; color: #555; line-height: 1.5; }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="title">マンションの例で例えると...</div>
+  <div class="cards">
+    <div class="card card-onpre">
+      <div class="card-name name-onpre">オンプレミス</div>
+      <div class="card-sub">一戸建て</div>
+      <div class="card-desc">土地から購入<br>全部自分で</div>
+    </div>
+    <div class="card card-iaas">
+      <div class="card-name name-iaas">IaaS</div>
+      <div class="card-sub">スケルトン</div>
+      <div class="card-desc">部屋だけ借りる<br>内装は自分で</div>
+    </div>
+    <div class="card card-paas">
+      <div class="card-name name-paas">PaaS</div>
+      <div class="card-sub">内装済み</div>
+      <div class="card-desc">設備も完備<br>家具は自分</div>
+    </div>
+    <div class="card card-saas">
+      <div class="card-name name-saas">SaaS</div>
+      <div class="card-sub">家具付き</div>
+      <div class="card-desc">すぐ住める<br>何もいらない</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

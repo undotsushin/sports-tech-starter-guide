@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #f8f9fa; font-family: -apple-system, 'Hiragino Sans', 'Meiryo', sans-serif; display: flex; justify-content: center; padding: 24px; }
+  .container { max-width: 540px; width: 100%; }
+  .title { font-size: 15px; color: #333; font-weight: 700; margin-bottom: 16px; text-align: center; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .card { background: #fff; border-radius: 12px; padding: 16px; border-top: 4px solid; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+  .card-num { font-size: 12px; font-weight: 700; margin-bottom: 6px; }
+  .card-title { font-size: 14px; font-weight: 700; color: #333; margin-bottom: 8px; }
+  .card ul { list-style: none; padding: 0; }
+  .card ul li { font-size: 13px; color: #555; line-height: 1.7; padding-left: 12px; position: relative; }
+  .card ul li::before { content: ''; position: absolute; left: 0; top: 10px; width: 5px; height: 5px; border-radius: 50%; }
+  .card .note { font-size: 12px; color: #888; margin-top: 6px; font-style: italic; }
+  .c1 { border-color: #4A90D9; } .c1 .card-num { color: #4A90D9; } .c1 li::before { background: #4A90D9; }
+  .c2 { border-color: #50C878; } .c2 .card-num { color: #50C878; } .c2 li::before { background: #50C878; }
+  .c3 { border-color: #F5A623; } .c3 .card-num { color: #F5A623; } .c3 li::before { background: #F5A623; }
+  .c4 { border-color: #9B59B6; } .c4 .card-num { color: #9B59B6; } .c4 li::before { background: #9B59B6; }
+</style>
+</head>
+<body>
+<div class="container" id="diagram">
+  <div class="title">機能提案に準備するもの(4点セット)</div>
+  <div class="grid">
+    <div class="card c1">
+      <div class="card-num">1</div>
+      <div class="card-title">ユーザーストーリー</div>
+      <ul>
+        <li>誰が?</li>
+        <li>何をしたい?</li>
+        <li>なぜ?</li>
+      </ul>
+      <div class="note">例: コーチが試合動画を選手と共有したい</div>
+    </div>
+    <div class="card c2">
+      <div class="card-num">2</div>
+      <div class="card-title">画面設計書</div>
+      <ul>
+        <li>画面のレイアウト</li>
+        <li>ボタンの配置</li>
+        <li>入力項目</li>
+      </ul>
+      <div class="note">ツール: Figma, Adobe XD, 手書きOK</div>
+    </div>
+    <div class="card c3">
+      <div class="card-num">3</div>
+      <div class="card-title">類似サービスの参考事例</div>
+      <ul>
+        <li>他サービスでの実装例</li>
+        <li>スクリーンショット</li>
+        <li>良い点・悪い点</li>
+      </ul>
+    </div>
+    <div class="card c4">
+      <div class="card-num">4</div>
+      <div class="card-title">想定工数とスケジュール</div>
+      <ul>
+        <li>ざっくりの工数予想</li>
+        <li>リリース希望日</li>
+        <li>優先度</li>
+      </ul>
+    </div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IaaSのメリット</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #f8f9fa; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', sans-serif; }
+  #diagram {
+    padding: 24px;
+    max-width: 680px;
+  }
+  h2 { font-size: 18px; color: #1a73e8; margin-bottom: 16px; }
+  .cards { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .card {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 16px;
+    border-left: 4px solid #1a73e8;
+  }
+  .card-num { font-size: 12px; color: #1a73e8; font-weight: 700; margin-bottom: 4px; }
+  .card-title { font-size: 14px; font-weight: 700; color: #333; margin-bottom: 6px; }
+  .card-desc { font-size: 12px; color: #555; line-height: 1.5; }
+  .card-arrow { font-size: 12px; color: #1a73e8; margin-top: 6px; }
+</style>
+</head>
+<body>
+<div id="diagram">
+  <h2>IaaSのメリット</h2>
+  <div class="cards">
+    <div class="card">
+      <div class="card-num">1</div>
+      <div class="card-title">自由度が高い</div>
+      <div class="card-desc">OS、ミドルウェア、言語を自由に選べる</div>
+      <div class="card-arrow">→ 既存システムの移行も楽</div>
+    </div>
+    <div class="card">
+      <div class="card-num">2</div>
+      <div class="card-title">スケーラブル</div>
+      <div class="card-desc">アクセス増加時、すぐにサーバーを追加できる</div>
+      <div class="card-arrow">→ 規模に応じて柔軟に対応</div>
+    </div>
+    <div class="card">
+      <div class="card-num">3</div>
+      <div class="card-title">初期費用不要</div>
+      <div class="card-desc">サーバー購入不要（数百万円節約）</div>
+      <div class="card-arrow">→ 月額1,000円から始められる</div>
+    </div>
+    <div class="card">
+      <div class="card-num">4</div>
+      <div class="card-title">世界中に展開可能</div>
+      <div class="card-desc">世界中のデータセンターから選択</div>
+      <div class="card-arrow">→ 日本、米国、欧州など</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

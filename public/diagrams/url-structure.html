@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<style>
+  body { margin: 0; padding: 40px; background: #f8f9fa; font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', sans-serif; }
+  .container { max-width: 800px; margin: 0 auto; }
+  .url-bar { background: white; border: 2px solid #e0e0e0; border-radius: 24px; padding: 16px 24px; font-family: 'Courier New', monospace; font-size: 16px; margin-bottom: 16px; overflow-x: auto; white-space: nowrap; }
+  .url-bar .protocol { color: #2e7d32; font-weight: bold; background: #e8f5e9; padding: 2px 4px; border-radius: 4px; }
+  .url-bar .domain { color: #1565c0; font-weight: bold; background: #e3f2fd; padding: 2px 4px; border-radius: 4px; }
+  .url-bar .path { color: #e65100; font-weight: bold; background: #fff3e0; padding: 2px 4px; border-radius: 4px; }
+  .url-bar .query { color: #6a1b9a; font-weight: bold; background: #f3e5f5; padding: 2px 4px; border-radius: 4px; }
+  .url-bar .fragment { color: #c62828; font-weight: bold; background: #ffebee; padding: 2px 4px; border-radius: 4px; }
+  .legend { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 20px; }
+  .legend-item { display: flex; align-items: flex-start; background: white; border-radius: 10px; padding: 14px 16px; border: 1px solid #e0e0e0; }
+  .legend-color { width: 16px; height: 16px; border-radius: 4px; margin-right: 12px; flex-shrink: 0; margin-top: 2px; }
+  .color-green { background: #2e7d32; }
+  .color-blue { background: #1565c0; }
+  .color-orange { background: #e65100; }
+  .color-purple { background: #6a1b9a; }
+  .color-red { background: #c62828; }
+  .legend-title { font-weight: bold; font-size: 14px; color: #333; }
+  .legend-desc { font-size: 12px; color: #666; margin-top: 2px; }
+  .legend-example { font-size: 11px; color: #999; font-family: 'Courier New', monospace; margin-top: 2px; }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="url-bar">
+    <span class="protocol">https://</span><span class="domain">www.sportsbull.jp</span><span class="path">/news/article/123</span><span class="query">?category=soccer</span><span class="fragment">#title</span>
+  </div>
+
+  <div class="legend">
+    <div class="legend-item">
+      <div class="legend-color color-green"></div>
+      <div>
+        <div class="legend-title">プロトコル</div>
+        <div class="legend-desc">通信方法を指定</div>
+        <div class="legend-example">https:// = 安全な暗号化通信</div>
+      </div>
+    </div>
+    <div class="legend-item">
+      <div class="legend-color color-blue"></div>
+      <div>
+        <div class="legend-title">ドメイン</div>
+        <div class="legend-desc">サイトの住所</div>
+        <div class="legend-example">www.sportsbull.jp</div>
+      </div>
+    </div>
+    <div class="legend-item">
+      <div class="legend-color color-orange"></div>
+      <div>
+        <div class="legend-title">パス</div>
+        <div class="legend-desc">サイト内のどのページか</div>
+        <div class="legend-example">/news/article/123</div>
+      </div>
+    </div>
+    <div class="legend-item">
+      <div class="legend-color color-purple"></div>
+      <div>
+        <div class="legend-title">クエリパラメータ</div>
+        <div class="legend-desc">ページに渡す追加情報</div>
+        <div class="legend-example">?category=soccer</div>
+      </div>
+    </div>
+    <div class="legend-item" style="grid-column: span 2; max-width: 50%;">
+      <div class="legend-color color-red"></div>
+      <div>
+        <div class="legend-title">フラグメント</div>
+        <div class="legend-desc">ページ内の特定箇所にジャンプ</div>
+        <div class="legend-example">#title</div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

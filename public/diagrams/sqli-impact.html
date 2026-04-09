@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=700">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #f8f9fa; font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', sans-serif; display: flex; justify-content: center; padding: 20px; }
+.card { background: #fff; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); padding: 28px 32px; width: 640px; }
+h2 { font-size: 18px; color: #d32f2f; margin-bottom: 16px; text-align: center; }
+.items { list-style: none; }
+.items li { display: flex; align-items: center; gap: 10px; padding: 10px 14px; margin-bottom: 6px; background: #ffebee; border-radius: 8px; font-size: 14px; color: #333; border-left: 4px solid #ef5350; }
+.icon { color: #d32f2f; font-size: 14px; font-weight: bold; flex-shrink: 0; }
+</style>
+</head>
+<body>
+<div class="card" id="target">
+  <h2>SQLインジェクションでできること</h2>
+  <ul class="items">
+    <li><span class="icon">×</span>全ユーザーの情報を取得</li>
+    <li><span class="icon">×</span>データベースの内容を削除</li>
+    <li><span class="icon">×</span>管理者権限でログイン</li>
+    <li><span class="icon">×</span>個人情報の大量流出</li>
+  </ul>
+</div>
+</body>
+</html>

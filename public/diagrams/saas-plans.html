@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>料金体系の例</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #f8f9fa; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', sans-serif; }
+  #diagram {
+    padding: 24px;
+    max-width: 680px;
+  }
+  h2 { font-size: 18px; color: #333; margin-bottom: 16px; }
+  .services { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; }
+  .service {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .service:nth-child(1) .service-header { background: #4285f4; }
+  .service:nth-child(2) .service-header { background: #34a853; }
+  .service:nth-child(3) .service-header { background: #0176d3; }
+  .service-header {
+    padding: 10px 14px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+  }
+  .plan { padding: 10px 14px; border-bottom: 1px solid #f0f0f0; }
+  .plan:last-child { border-bottom: none; }
+  .plan-name { font-size: 12px; font-weight: 600; color: #333; }
+  .plan-price { font-size: 11px; color: #1a73e8; font-weight: 600; }
+  .plan-desc { font-size: 10px; color: #777; }
+</style>
+</head>
+<body>
+<div id="diagram">
+  <h2>月額プランの比較</h2>
+  <div class="services">
+    <div class="service">
+      <div class="service-header">Slack</div>
+      <div class="plan">
+        <div class="plan-name">無料</div>
+        <div class="plan-desc">10,000件のメッセージ履歴</div>
+      </div>
+      <div class="plan">
+        <div class="plan-name">Pro</div>
+        <div class="plan-price">月850円/ユーザー</div>
+        <div class="plan-desc">無制限</div>
+      </div>
+      <div class="plan">
+        <div class="plan-name">Business+</div>
+        <div class="plan-price">月1,600円/ユーザー</div>
+        <div class="plan-desc">管理機能</div>
+      </div>
+    </div>
+    <div class="service">
+      <div class="service-header">Google Workspace</div>
+      <div class="plan">
+        <div class="plan-name">Business Starter</div>
+        <div class="plan-price">月680円/ユーザー</div>
+        <div class="plan-desc">30GB</div>
+      </div>
+      <div class="plan">
+        <div class="plan-name">Business Standard</div>
+        <div class="plan-price">月1,360円/ユーザー</div>
+        <div class="plan-desc">2TB</div>
+      </div>
+      <div class="plan">
+        <div class="plan-name">Business Plus</div>
+        <div class="plan-price">月2,040円/ユーザー</div>
+        <div class="plan-desc">5TB</div>
+      </div>
+    </div>
+    <div class="service">
+      <div class="service-header">Salesforce</div>
+      <div class="plan">
+        <div class="plan-name">Essentials</div>
+        <div class="plan-price">月3,000円/ユーザー</div>
+        <div class="plan-desc">小規模</div>
+      </div>
+      <div class="plan">
+        <div class="plan-name">Professional</div>
+        <div class="plan-price">月9,000円/ユーザー</div>
+        <div class="plan-desc">中規模</div>
+      </div>
+      <div class="plan">
+        <div class="plan-name">Enterprise</div>
+        <div class="plan-price">月18,000円/ユーザー</div>
+        <div class="plan-desc">大規模</div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

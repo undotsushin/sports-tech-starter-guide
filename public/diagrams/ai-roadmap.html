@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<style>
+  body { margin: 0; padding: 40px; background: #f8f9fa; font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', sans-serif; }
+  .container { max-width: 620px; margin: 0 auto; }
+  h2 { text-align: center; color: #333; font-size: 18px; margin-bottom: 24px; }
+  .timeline { position: relative; }
+  .step { display: flex; gap: 16px; margin-bottom: 14px; }
+  .left { width: 100px; text-align: right; flex-shrink: 0; padding-top: 14px; }
+  .freq { font-size: 15px; font-weight: bold; }
+  .time { font-size: 12px; color: #888; }
+  .line { display: flex; flex-direction: column; align-items: center; flex-shrink: 0; }
+  .dot { width: 16px; height: 16px; border-radius: 50%; margin-top: 16px; flex-shrink: 0; }
+  .bar { width: 2px; flex: 1; background: #ddd; }
+  .d1 { background: #10a37f; }
+  .d2 { background: #d97706; }
+  .d3 { background: #6366f1; }
+  .f1 { color: #10a37f; }
+  .f2 { color: #d97706; }
+  .f3 { color: #6366f1; }
+  .content { background: white; border-radius: 12px; padding: 14px 18px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); flex: 1; }
+  .content ul { margin: 0; padding-left: 18px; font-size: 13px; color: #555; line-height: 2; }
+</style>
+</head>
+<body>
+<div class="container">
+  <h2>AIスキルアップのロードマップ</h2>
+  <div class="timeline">
+    <div class="step">
+      <div class="left"><div class="freq f1">毎日</div><div class="time">5分</div></div>
+      <div class="line"><div class="dot d1"></div><div class="bar"></div></div>
+      <div class="content">
+        <ul>
+          <li>新しいプロンプトを試す</li>
+          <li>成功事例を記録</li>
+        </ul>
+      </div>
+    </div>
+    <div class="step">
+      <div class="left"><div class="freq f2">毎週</div><div class="time">30分</div></div>
+      <div class="line"><div class="dot d2"></div><div class="bar"></div></div>
+      <div class="content">
+        <ul>
+          <li>成功事例を共有</li>
+          <li>新機能を確認</li>
+        </ul>
+      </div>
+    </div>
+    <div class="step">
+      <div class="left"><div class="freq f3">毎月</div><div class="time">2時間</div></div>
+      <div class="line"><div class="dot d3"></div></div>
+      <div class="content">
+        <ul>
+          <li>業務効率化を振り返り</li>
+          <li>プロンプトを改善</li>
+          <li>ROIを測定</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

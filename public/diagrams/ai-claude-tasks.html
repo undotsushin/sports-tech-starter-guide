@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<style>
+  body { margin: 0; padding: 32px; background: #f8f9fa; font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', sans-serif; }
+  .container { max-width: 620px; margin: 0 auto; }
+  h2 { text-align: center; color: #333; font-size: 18px; margin-bottom: 20px; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .grid .card:last-child:nth-child(odd) { grid-column: 1 / -1; max-width: 50%; margin: 0 auto; }
+  .card { background: white; border-radius: 12px; padding: 16px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+  .card-header { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+  .num { background: #d97706; color: white; width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: bold; flex-shrink: 0; }
+  .card-header h3 { margin: 0; font-size: 14px; color: #333; }
+  .card ul { margin: 0; padding-left: 18px; font-size: 12px; color: #666; line-height: 1.8; }
+</style>
+</head>
+<body>
+<div class="container">
+  <h2>Claudeの得意なタスク</h2>
+  <div class="grid">
+    <div class="card">
+      <div class="card-header"><div class="num">1</div><h3>長文の要約</h3></div>
+      <ul><li>論文、レポート、書籍の要約</li><li>会議の議事録まとめ</li></ul>
+    </div>
+    <div class="card">
+      <div class="card-header"><div class="num">2</div><h3>長文の分析</h3></div>
+      <ul><li>契約書のレビュー</li><li>提案書の改善提案</li></ul>
+    </div>
+    <div class="card">
+      <div class="card-header"><div class="num">3</div><h3>文章の校正</h3></div>
+      <ul><li>表現の改善</li><li>誤字脱字チェック</li></ul>
+    </div>
+    <div class="card">
+      <div class="card-header"><div class="num">4</div><h3>コードレビュー</h3></div>
+      <ul><li>セキュリティチェック</li><li>改善提案</li></ul>
+    </div>
+    <div class="card">
+      <div class="card-header"><div class="num">5</div><h3>議論の整理</h3></div>
+      <ul><li>論点の整理</li><li>意見のまとめ</li></ul>
+    </div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=700">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #f8f9fa; font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', sans-serif; display: flex; justify-content: center; padding: 20px; }
+.card { background: #fff; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); padding: 28px 32px; width: 640px; }
+h2 { font-size: 18px; color: #333; margin-bottom: 16px; text-align: center; }
+.section-title { font-size: 14px; font-weight: bold; color: #1565c0; margin-bottom: 8px; margin-top: 12px; }
+.section-title:first-of-type { margin-top: 0; }
+.items { list-style: none; }
+.items li { display: flex; align-items: center; gap: 10px; padding: 7px 14px; margin-bottom: 4px; background: #e8f5e9; border-radius: 8px; font-size: 13px; color: #333; }
+.check { color: #2e7d32; font-size: 14px; flex-shrink: 0; }
+</style>
+</head>
+<body>
+<div class="card" id="target">
+  <h2>SQLインジェクション対策チェックリスト</h2>
+  <div class="section-title">開発側の対策</div>
+  <ul class="items">
+    <li><span class="check">☐</span>プリペアドステートメントを使う</li>
+    <li><span class="check">☐</span>入力値のバリデーション</li>
+    <li><span class="check">☐</span>エラーメッセージを詳しく出さない</li>
+    <li><span class="check">☐</span>最小権限の原則（データベースユーザーの権限を制限）</li>
+  </ul>
+  <div class="section-title">運用側の対策</div>
+  <ul class="items">
+    <li><span class="check">☐</span>WAF（Web Application Firewall）の導入</li>
+    <li><span class="check">☐</span>定期的な脆弱性診断</li>
+    <li><span class="check">☐</span>ログの監視</li>
+  </ul>
+</div>
+</body>
+</html>

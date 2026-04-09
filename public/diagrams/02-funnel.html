@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #f8f9fa; font-family: -apple-system, 'Hiragino Sans', 'Meiryo', sans-serif; display: flex; justify-content: center; padding: 24px; }
+  .container { max-width: 520px; width: 100%; }
+  .title { font-size: 14px; color: #555; font-weight: 600; margin-bottom: 16px; text-align: center; }
+  .funnel-step { display: flex; align-items: center; gap: 12px; margin-bottom: 6px; }
+  .bar { border-radius: 8px; height: 48px; display: flex; align-items: center; padding: 0 16px; color: #fff; font-weight: 700; font-size: 14px; transition: width 0.3s; }
+  .label { font-size: 13px; color: #555; white-space: nowrap; min-width: 90px; text-align: right; }
+  .drop { font-size: 12px; color: #E74C3C; margin: 2px 0 2px 102px; font-weight: 500; }
+  .result { text-align: center; margin-top: 16px; padding: 12px; background: #EBF5FB; border-radius: 8px; font-size: 14px; color: #2C3E50; font-weight: 600; }
+</style>
+</head>
+<body>
+<div class="container" id="diagram">
+  <div class="title">100人がサイトに来た場合</div>
+  <div class="funnel-step">
+    <div class="label">トップページ</div>
+    <div class="bar" style="width:100%;max-width:380px;background:#4A90D9;">100人</div>
+  </div>
+  <div class="drop">-30人 離脱(興味なし)</div>
+  <div class="funnel-step">
+    <div class="label">商品ページ</div>
+    <div class="bar" style="width:70%;max-width:266px;background:#50C878;">70人</div>
+  </div>
+  <div class="drop">-40人 離脱(価格が高い? 情報不足?)</div>
+  <div class="funnel-step">
+    <div class="label">カート追加</div>
+    <div class="bar" style="width:30%;max-width:114px;background:#F5A623;">30人</div>
+  </div>
+  <div class="drop">-20人 離脱(送料が高い? 入力面倒?)</div>
+  <div class="funnel-step">
+    <div class="label">購入完了</div>
+    <div class="bar" style="width:10%;max-width:50px;background:#E74C3C;">10人</div>
+  </div>
+  <div class="result">どこで一番離脱しているかを特定 → CVR 10%</div>
+</div>
+</body>
+</html>

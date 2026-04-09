@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=700">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #f8f9fa; font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', sans-serif; display: flex; justify-content: center; padding: 20px; }
+.card { background: #fff; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); padding: 28px 32px; width: 640px; }
+h2 { font-size: 18px; color: #d32f2f; margin-bottom: 16px; text-align: center; }
+.case { margin-bottom: 12px; padding: 14px 16px; border-radius: 10px; border-left: 4px solid #ef5350; background: #fff5f5; }
+.case:last-child { margin-bottom: 0; }
+.case-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px; }
+.target { font-size: 15px; font-weight: bold; color: #333; }
+.year { font-size: 12px; color: #888; }
+.desc { font-size: 13px; color: #555; }
+.damage { font-size: 13px; color: #d32f2f; margin-top: 4px; }
+</style>
+</head>
+<body>
+<div class="card" id="target">
+  <h2>ランサムウェア被害事例</h2>
+  <div class="case">
+    <div class="case-header">
+      <span class="target">病院</span><span class="year">2021年</span>
+    </div>
+    <div class="desc">電子カルテが全て暗号化され、診療停止</div>
+    <div class="damage">→ 復旧に数ヶ月、損害数億円</div>
+  </div>
+  <div class="case">
+    <div class="case-header">
+      <span class="target">製造業</span><span class="year">2022年</span>
+    </div>
+    <div class="desc">工場の制御システムが暗号化され、生産停止</div>
+    <div class="damage">→ 身代金1億円を支払い</div>
+  </div>
+  <div class="case">
+    <div class="case-header">
+      <span class="target">自治体</span><span class="year">2023年</span>
+    </div>
+    <div class="desc">住民情報が暗号化され、行政サービス停止</div>
+    <div class="damage">→ 復旧に半年</div>
+  </div>
+</div>
+</body>
+</html>
