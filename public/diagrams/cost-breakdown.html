@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<style>
+  body { margin: 0; padding: 40px; background: #f8f9fa; font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', sans-serif; }
+  .container { max-width: 480px; margin: 0 auto; }
+  .title { font-size: 16px; font-weight: bold; color: #333; margin-bottom: 16px; text-align: center; }
+  .bar-chart { display: flex; flex-direction: column; gap: 10px; }
+  .row { display: flex; align-items: center; gap: 12px; }
+  .label { width: 110px; font-size: 13px; font-weight: bold; color: #555; text-align: right; flex-shrink: 0; }
+  .bar-wrap { flex: 1; display: flex; align-items: center; gap: 8px; }
+  .bar { height: 28px; border-radius: 6px; display: flex; align-items: center; padding-left: 10px; font-size: 12px; color: white; font-weight: bold; }
+  .bar-plan { background: #5c6bc0; width: 10%; min-width: 60px; }
+  .bar-design { background: #42a5f5; width: 20%; min-width: 60px; }
+  .bar-dev { background: #ef5350; width: 50%; min-width: 60px; }
+  .bar-test { background: #66bb6a; width: 10%; min-width: 60px; }
+  .bar-release { background: #ffa726; width: 10%; min-width: 60px; }
+  .amount { font-size: 13px; color: #666; white-space: nowrap; }
+  .total { margin-top: 16px; padding-top: 12px; border-top: 2px solid #333; display: flex; justify-content: space-between; align-items: center; }
+  .total-label { font-size: 15px; font-weight: bold; color: #333; }
+  .total-amount { font-size: 20px; font-weight: bold; color: #c62828; }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="title">コスト内訳の例（簡単なアプリ）</div>
+  <div class="bar-chart">
+    <div class="row">
+      <div class="label">企画・設計</div>
+      <div class="bar-wrap"><div class="bar bar-plan">10%</div><div class="amount">50万円</div></div>
+    </div>
+    <div class="row">
+      <div class="label">デザイン</div>
+      <div class="bar-wrap"><div class="bar bar-design">20%</div><div class="amount">100万円</div></div>
+    </div>
+    <div class="row">
+      <div class="label">開発</div>
+      <div class="bar-wrap"><div class="bar bar-dev">50%</div><div class="amount">250万円</div></div>
+    </div>
+    <div class="row">
+      <div class="label">テスト</div>
+      <div class="bar-wrap"><div class="bar bar-test">10%</div><div class="amount">50万円</div></div>
+    </div>
+    <div class="row">
+      <div class="label">リリース準備</div>
+      <div class="bar-wrap"><div class="bar bar-release">10%</div><div class="amount">50万円</div></div>
+    </div>
+  </div>
+  <div class="total">
+    <div class="total-label">合計</div>
+    <div class="total-amount">500万円</div>
+  </div>
+</div>
+</body>
+</html>

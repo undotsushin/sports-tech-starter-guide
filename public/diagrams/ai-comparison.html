@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<style>
+  body { margin: 0; padding: 40px; background: #f8f9fa; font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', sans-serif; }
+  .container { max-width: 520px; margin: 0 auto; }
+  table { width: 100%; border-collapse: collapse; background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.1); font-size: 13px; }
+  th { padding: 10px 12px; text-align: center; color: white; font-size: 13px; }
+  th:first-child { background: #555; text-align: left; width: 120px; }
+  th.chatgpt { background: #10a37f; }
+  th.claude { background: #d97706; }
+  th.gemini { background: #4285f4; }
+  td { padding: 8px 12px; border-top: 1px solid #f0f0f0; text-align: center; }
+  td:first-child { text-align: left; font-weight: bold; color: #555; background: #fafafa; }
+  .best { color: #2e7d32; font-weight: bold; }
+  .good { color: #1565c0; }
+  .ok { color: #888; }
+  .bad { color: #c62828; }
+  .legend { margin-top: 10px; font-size: 11px; color: #888; text-align: center; }
+</style>
+</head>
+<body>
+<div class="container">
+  <table>
+    <tr><th>タスク</th><th class="chatgpt">ChatGPT</th><th class="claude">Claude</th><th class="gemini">Gemini</th></tr>
+    <tr><td>コード生成</td><td class="best">◎</td><td class="good">○</td><td class="ok">△</td></tr>
+    <tr><td>長文要約</td><td class="ok">△</td><td class="best">◎</td><td class="good">○</td></tr>
+    <tr><td>アイデア出し</td><td class="best">◎</td><td class="good">○</td><td class="ok">△</td></tr>
+    <tr><td>正確性</td><td class="good">○</td><td class="best">◎</td><td class="good">○</td></tr>
+    <tr><td>最新情報</td><td class="bad">×</td><td class="bad">×</td><td class="best">◎</td></tr>
+    <tr><td>長文処理</td><td class="ok">△</td><td class="best">◎</td><td class="ok">△</td></tr>
+    <tr><td>日本語品質</td><td class="best">◎</td><td class="best">◎</td><td class="good">○</td></tr>
+    <tr><td>画像生成</td><td class="best">◎</td><td class="bad">×</td><td class="good">○</td></tr>
+  </table>
+  <div class="legend">◎ 非常に得意　○ 得意　△ 普通　× 不得意</div>
+</div>
+</body>
+</html>

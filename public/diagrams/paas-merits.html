@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PaaSのメリット</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #f8f9fa; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', sans-serif; }
+  #diagram {
+    padding: 24px;
+    max-width: 680px;
+  }
+  h2 { font-size: 18px; color: #1a73e8; margin-bottom: 16px; }
+  .cards { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; }
+  .card {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 14px;
+    border-left: 4px solid #1a73e8;
+  }
+  .card-num { font-size: 12px; color: #1a73e8; font-weight: 700; margin-bottom: 4px; }
+  .card-title { font-size: 13px; font-weight: 700; color: #333; margin-bottom: 6px; }
+  .card-desc { font-size: 11px; color: #555; line-height: 1.5; }
+  .card-arrow { font-size: 11px; color: #1a73e8; margin-top: 6px; }
+</style>
+</head>
+<body>
+<div id="diagram">
+  <h2>PaaSのメリット</h2>
+  <div class="cards">
+    <div class="card">
+      <div class="card-num">1</div>
+      <div class="card-title">サーバー管理不要</div>
+      <div class="card-desc">OS更新、セキュリティ対策を自動でやってくれる</div>
+      <div class="card-arrow">→ エンジニアの工数削減</div>
+    </div>
+    <div class="card">
+      <div class="card-num">2</div>
+      <div class="card-title">開発に集中できる</div>
+      <div class="card-desc">インフラを気にせず、コードを書くだけ</div>
+      <div class="card-arrow">→ 開発速度2〜3倍向上</div>
+    </div>
+    <div class="card">
+      <div class="card-num">3</div>
+      <div class="card-title">自動スケーリング</div>
+      <div class="card-desc">アクセス増加時、自動でサーバーを増やしてくれる</div>
+      <div class="card-arrow">→ 急なアクセス増加にも対応</div>
+    </div>
+    <div class="card">
+      <div class="card-num">4</div>
+      <div class="card-title">デプロイが簡単</div>
+      <div class="card-desc">gitにpushするだけで公開</div>
+      <div class="card-arrow">→ 初心者でも5分でデプロイ</div>
+    </div>
+    <div class="card">
+      <div class="card-num">5</div>
+      <div class="card-title">初期費用が安い</div>
+      <div class="card-desc">無料プランから始められる</div>
+      <div class="card-arrow">→ 月1,000円程度で十分</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

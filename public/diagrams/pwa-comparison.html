@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<style>
+  body { margin: 0; padding: 40px; background: #f8f9fa; font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', sans-serif; }
+  .container { max-width: 600px; margin: 0 auto; display: flex; gap: 20px; }
+  .card { flex: 1; border-radius: 12px; padding: 20px; text-align: center; }
+  .card-web { background: #fff3e0; border: 2px solid #e65100; }
+  .card-pwa { background: #e3f2fd; border: 2px solid #1565c0; }
+  .card-title { font-size: 16px; font-weight: bold; margin-bottom: 16px; }
+  .title-web { color: #e65100; }
+  .title-pwa { color: #1565c0; }
+  .feature { padding: 10px 0; border-bottom: 1px solid rgba(0,0,0,0.08); font-size: 14px; color: #333; display: flex; align-items: center; gap: 8px; justify-content: center; }
+  .feature:last-child { border-bottom: none; }
+  .icon-no { color: #c62828; font-weight: bold; }
+  .icon-yes { color: #2e7d32; font-weight: bold; }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="card card-web">
+    <div class="card-title title-web">通常のWebアプリ</div>
+    <div class="feature">ブラウザから開く</div>
+    <div class="feature"><span class="icon-no">✗</span> オンラインのみ</div>
+    <div class="feature"><span class="icon-no">✗</span> プッシュ通知なし</div>
+  </div>
+  <div class="card card-pwa">
+    <div class="card-title title-pwa">PWA</div>
+    <div class="feature">ホーム画面に追加</div>
+    <div class="feature"><span class="icon-yes">✓</span> オフライン対応</div>
+    <div class="feature"><span class="icon-yes">✓</span> プッシュ通知あり</div>
+  </div>
+</div>
+</body>
+</html>

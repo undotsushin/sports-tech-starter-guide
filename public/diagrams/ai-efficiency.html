@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<style>
+  body { margin: 0; padding: 40px; background: #f8f9fa; font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', sans-serif; }
+  .container { max-width: 540px; margin: 0 auto; display: flex; gap: 20px; }
+  .card { flex: 1; border-radius: 10px; padding: 16px; }
+  .card-before { background: #ffebee; border: 2px solid #c62828; }
+  .card-after { background: #e3f2fd; border: 2px solid #1565c0; }
+  .card-title { font-size: 14px; font-weight: bold; text-align: center; margin-bottom: 12px; }
+  .title-before { color: #c62828; }
+  .title-after { color: #1565c0; }
+  .item { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid rgba(0,0,0,0.06); font-size: 12px; color: #333; }
+  .item:last-child { border-bottom: none; }
+  .time { font-weight: bold; }
+  .result { margin-top: 12px; padding: 10px; background: #e8f5e9; border-radius: 8px; text-align: center; font-size: 13px; font-weight: bold; color: #2e7d32; }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="card card-before">
+    <div class="card-title title-before">従来の方法（8時間）</div>
+    <div class="item"><span>情報収集</span><span class="time">2時間</span></div>
+    <div class="item"><span>構成案作成</span><span class="time">2時間</span></div>
+    <div class="item"><span>本文執筆</span><span class="time">3時間</span></div>
+    <div class="item"><span>校正</span><span class="time">1時間</span></div>
+  </div>
+  <div class="card card-after">
+    <div class="card-title title-after">AI活用（2時間）</div>
+    <div class="item"><span>AIで競合分析</span><span class="time">15分</span></div>
+    <div class="item"><span>AIで構成案</span><span class="time">10分</span></div>
+    <div class="item"><span>AIで下書き</span><span class="time">30分</span></div>
+    <div class="item"><span>人間が調整</span><span class="time">1時間</span></div>
+    <div class="item"><span>AIで校正</span><span class="time">5分</span></div>
+  </div>
+</div>
+<div style="max-width:540px;margin:12px auto 0;">
+  <div class="result">削減時間: 6時間（75%削減）</div>
+</div>
+</body>
+</html>

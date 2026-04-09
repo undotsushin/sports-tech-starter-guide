@@ -57,6 +57,17 @@ export async function generateMetadata({
   };
 }
 
+const basePath = process.env.NODE_ENV === 'production' ? '/sports-tech-starter-guide' : '';
+
+function MdxImage(props: React.ImgHTMLAttributes<HTMLImageElement>) {
+  const rawSrc = typeof props.src === 'string' ? props.src : '';
+  const src = rawSrc.startsWith('/') && !rawSrc.startsWith(basePath)
+    ? `${basePath}${rawSrc}`
+    : rawSrc;
+  // eslint-disable-next-line @next/next/no-img-element
+  return <img {...props} src={src} alt={props.alt || ''} />;
+}
+
 // MDXページコンポーネント
 export default async function ContentPage({
   params,
@@ -98,6 +109,7 @@ export default async function ContentPage({
             WhyNeeded,
             Quiz,
             HiddenContentCard,
+            img: MdxImage,
           }}
           options={{
             mdxOptions: {

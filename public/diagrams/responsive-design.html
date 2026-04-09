@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<style>
+  body { margin: 0; padding: 40px; background: #f8f9fa; font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', sans-serif; }
+  .container { max-width: 800px; margin: 0 auto; display: flex; gap: 40px; align-items: flex-start; justify-content: center; }
+  .device { text-align: center; }
+  .device-label { font-size: 16px; font-weight: bold; color: #333; margin-bottom: 12px; }
+  .device-sub { font-size: 12px; color: #888; margin-bottom: 8px; }
+
+  /* PC */
+  .pc-frame { width: 420px; border: 3px solid #333; border-radius: 8px; overflow: hidden; background: white; }
+  .pc-header { background: #1a1a2e; color: white; padding: 10px 14px; display: flex; justify-content: space-between; align-items: center; font-size: 12px; }
+  .pc-nav { display: flex; gap: 12px; }
+  .pc-nav span { font-size: 11px; color: #ccc; }
+  .pc-body { display: flex; }
+  .pc-sidebar { width: 100px; background: #f0f0f0; padding: 10px; border-right: 1px solid #ddd; }
+  .pc-sidebar-item { font-size: 10px; color: #666; padding: 4px 0; border-bottom: 1px solid #e0e0e0; }
+  .pc-main { flex: 1; padding: 12px; }
+  .pc-main-title { font-size: 13px; font-weight: bold; margin-bottom: 6px; }
+  .pc-main-text { font-size: 10px; color: #888; line-height: 1.6; }
+  .pc-footer { background: #333; color: #aaa; font-size: 9px; padding: 6px 14px; text-align: center; }
+
+  /* SP */
+  .sp-frame { width: 180px; border: 3px solid #333; border-radius: 16px; overflow: hidden; background: white; padding-top: 8px; padding-bottom: 8px; }
+  .sp-header { background: #1a1a2e; color: white; padding: 8px 12px; display: flex; justify-content: space-between; align-items: center; font-size: 11px; }
+  .sp-hamburger { font-size: 16px; cursor: pointer; }
+  .sp-main { padding: 10px; }
+  .sp-main-title { font-size: 12px; font-weight: bold; margin-bottom: 6px; }
+  .sp-main-text { font-size: 9px; color: #888; line-height: 1.6; }
+  .sp-sidebar { background: #f0f0f0; padding: 8px 10px; border-top: 1px solid #ddd; }
+  .sp-sidebar-label { font-size: 9px; font-weight: bold; color: #666; margin-bottom: 4px; }
+  .sp-sidebar-item { font-size: 9px; color: #888; padding: 2px 0; }
+  .sp-footer { background: #333; color: #aaa; font-size: 8px; padding: 6px 10px; text-align: center; }
+  .sp-note { font-size: 11px; color: #e65100; margin-top: 4px; }
+
+  .arrow-between { display: flex; align-items: center; font-size: 32px; color: #1976d2; padding-top: 80px; }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="device">
+    <div class="device-label">PC表示（横長）</div>
+    <div class="pc-frame">
+      <div class="pc-header">
+        <span style="font-weight:bold;">LOGO</span>
+        <div class="pc-nav">
+          <span>ホーム</span><span>ニュース</span><span>検索</span>
+        </div>
+      </div>
+      <div class="pc-body">
+        <div class="pc-sidebar">
+          <div class="pc-sidebar-item">関連記事</div>
+          <div class="pc-sidebar-item">広告</div>
+          <div class="pc-sidebar-item">SNS</div>
+        </div>
+        <div class="pc-main">
+          <div class="pc-main-title">メインコンテンツ</div>
+          <div class="pc-main-text">記事本文がここに表示されます。サイドバーと横並びのレイアウトです。</div>
+        </div>
+      </div>
+      <div class="pc-footer">© 2025 Company</div>
+    </div>
+  </div>
+
+  <div class="arrow-between">→</div>
+
+  <div class="device">
+    <div class="device-label">スマホ表示（縦長）</div>
+    <div class="sp-frame">
+      <div class="sp-header">
+        <span style="font-weight:bold;">LOGO</span>
+        <div class="sp-hamburger">≡</div>
+      </div>
+      <div class="sp-main">
+        <div class="sp-main-title">メインコンテンツ</div>
+        <div class="sp-main-text">記事本文が縦に並びます。画面幅に合わせて自動的に調整されます。</div>
+      </div>
+      <div class="sp-sidebar">
+        <div class="sp-sidebar-label">▼ サイドバー（下に移動）</div>
+        <div class="sp-sidebar-item">関連記事</div>
+        <div class="sp-sidebar-item">広告</div>
+        <div class="sp-sidebar-item">SNS</div>
+      </div>
+      <div class="sp-footer">© 2025 Company</div>
+    </div>
+    <div class="sp-note">≡ ハンバーガーメニュー</div>
+  </div>
+</div>
+</body>
+</html>

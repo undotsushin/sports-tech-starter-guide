@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=700">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #f8f9fa; font-family: -apple-system, 'Hiragino Sans', 'Meiryo', sans-serif; display: flex; justify-content: center; padding: 24px; }
+  .container { max-width: 520px; width: 100%; }
+  .step { background: #fff; border-radius: 12px; padding: 16px 20px; margin-bottom: 8px; border-left: 5px solid; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+  .step-num { font-size: 12px; font-weight: 700; letter-spacing: 1px; margin-bottom: 6px; }
+  .step ul { list-style: none; padding: 0; }
+  .step ul li { font-size: 14px; color: #333; line-height: 1.7; padding-left: 12px; position: relative; }
+  .step ul li::before { content: ''; position: absolute; left: 0; top: 10px; width: 5px; height: 5px; border-radius: 50%; }
+  .s1 { border-color: #4A90D9; } .s1 .step-num { color: #4A90D9; } .s1 li::before { background: #4A90D9; }
+  .s2 { border-color: #50C878; } .s2 .step-num { color: #50C878; } .s2 li::before { background: #50C878; }
+  .s3 { border-color: #F5A623; } .s3 .step-num { color: #F5A623; } .s3 li::before { background: #F5A623; }
+  .s4 { border-color: #E74C3C; } .s4 .step-num { color: #E74C3C; } .s4 li::before { background: #E74C3C; }
+  .arrow { text-align: center; color: #bbb; font-size: 20px; line-height: 1; margin: 2px 0; }
+</style>
+</head>
+<body>
+<div class="container" id="diagram">
+  <div class="step s1">
+    <div class="step-num">STEP 1: ヒアリング</div>
+    <ul>
+      <li>いつから?</li>
+      <li>どのページが?</li>
+      <li>どのくらい遅い?(秒数)</li>
+      <li>スマホ? PC?</li>
+    </ul>
+  </div>
+  <div class="arrow">▼</div>
+  <div class="step s2">
+    <div class="step-num">STEP 2: 測定</div>
+    <ul>
+      <li>PageSpeed Insights で測定</li>
+      <li>スコアを確認(100点満点)</li>
+      <li>改善提案を確認</li>
+    </ul>
+  </div>
+  <div class="arrow">▼</div>
+  <div class="step s3">
+    <div class="step-num">STEP 3: 原因特定</div>
+    <ul>
+      <li>画像サイズをチェック</li>
+      <li>サーバーログを確認</li>
+      <li>プラグイン一覧を確認</li>
+    </ul>
+  </div>
+  <div class="arrow">▼</div>
+  <div class="step s4">
+    <div class="step-num">STEP 4: 改善提案</div>
+    <ul>
+      <li>具体的な改善策を提示</li>
+      <li>費用と効果を説明</li>
+      <li>優先順位をつける</li>
+    </ul>
+  </div>
+</div>
+</body>
+</html>

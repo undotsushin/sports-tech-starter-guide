@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #f8f9fa; font-family: -apple-system, 'Hiragino Sans', 'Meiryo', sans-serif; display: flex; justify-content: center; padding: 24px; }
+  .container { max-width: 560px; width: 100%; }
+  .title { font-size: 14px; color: #555; font-weight: 600; margin-bottom: 16px; text-align: center; }
+  .cards { display: flex; gap: 16px; }
+  .card { flex: 1; background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+  .card-header { padding: 10px 16px; color: #fff; font-weight: 700; font-size: 14px; text-align: center; }
+  .full .card-header { background: #6C7A89; }
+  .mvp .card-header { background: #4A90D9; }
+  .sub { font-size: 12px; font-weight: 400; opacity: 0.9; }
+  .card-body { padding: 12px 16px; }
+  .row { display: flex; justify-content: space-between; align-items: center; padding: 6px 0; border-bottom: 1px solid #f0f0f0; font-size: 13px; color: #333; }
+  .row:last-child { border-bottom: none; }
+  .icon-ok { color: #27AE60; font-weight: 700; }
+  .icon-no { color: #E74C3C; font-weight: 700; }
+  .later { font-size: 11px; color: #999; margin-left: 4px; }
+  .section-label { font-size: 11px; color: #999; font-weight: 600; padding: 8px 0 2px; border-bottom: none; }
+</style>
+</head>
+<body>
+<div class="container" id="diagram">
+  <div class="title">ECサイト: フル機能版 vs MVP版</div>
+  <div class="cards">
+    <div class="card full">
+      <div class="card-header">フル機能版<br><span class="sub">300万円</span></div>
+      <div class="card-body">
+        <div class="row"><span>商品一覧</span><span class="icon-ok">○</span></div>
+        <div class="row"><span>商品詳細</span><span class="icon-ok">○</span></div>
+        <div class="row"><span>カート</span><span class="icon-ok">○</span></div>
+        <div class="row"><span>決済</span><span class="icon-ok">○</span></div>
+        <div class="row"><span>会員登録</span><span class="icon-ok">○</span></div>
+        <div class="row section-label" style="border-top:1px dashed #ddd;margin-top:4px;padding-top:10px;">追加機能</div>
+        <div class="row"><span>レビュー機能</span><span class="icon-ok">○</span></div>
+        <div class="row"><span>クーポン機能</span><span class="icon-ok">○</span></div>
+        <div class="row"><span>ポイント機能</span><span class="icon-ok">○</span></div>
+        <div class="row"><span>おすすめ機能</span><span class="icon-ok">○</span></div>
+        <div class="row"><span>ランキング</span><span class="icon-ok">○</span></div>
+      </div>
+    </div>
+    <div class="card mvp">
+      <div class="card-header">MVP版<br><span class="sub">200万円</span></div>
+      <div class="card-body">
+        <div class="row"><span>商品一覧</span><span class="icon-ok">○</span></div>
+        <div class="row"><span>商品詳細</span><span class="icon-ok">○</span></div>
+        <div class="row"><span>カート</span><span class="icon-ok">○</span></div>
+        <div class="row"><span>決済</span><span class="icon-ok">○</span></div>
+        <div class="row"><span>会員登録</span><span class="icon-ok">○</span></div>
+        <div class="row section-label" style="border-top:1px dashed #ddd;margin-top:4px;padding-top:10px;">後で追加</div>
+        <div class="row"><span>レビュー機能</span><span><span class="icon-no">x</span><span class="later">後で追加</span></span></div>
+        <div class="row"><span>クーポン機能</span><span><span class="icon-no">x</span><span class="later">後で追加</span></span></div>
+        <div class="row"><span>ポイント機能</span><span><span class="icon-no">x</span><span class="later">後で追加</span></span></div>
+        <div class="row"><span>おすすめ機能</span><span><span class="icon-no">x</span><span class="later">後で追加</span></span></div>
+        <div class="row"><span>ランキング</span><span><span class="icon-no">x</span><span class="later">後で追加</span></span></div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

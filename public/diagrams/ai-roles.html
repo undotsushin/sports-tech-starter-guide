@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<style>
+  body { margin: 0; padding: 40px; background: #f8f9fa; font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', sans-serif; }
+  .container { max-width: 620px; margin: 0 auto; }
+  h2 { text-align: center; color: #333; font-size: 18px; margin-bottom: 24px; }
+  .cards { display: flex; gap: 16px; }
+  .card { flex: 1; background: white; border-radius: 12px; padding: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+  .card.ai { border-top: 4px solid #6366f1; }
+  .card.human { border-top: 4px solid #10a37f; }
+  .card h3 { margin: 0 0 14px 0; font-size: 16px; }
+  .card.ai h3 { color: #6366f1; }
+  .card.human h3 { color: #10a37f; }
+  .card ul { margin: 0; padding-left: 18px; font-size: 14px; color: #444; line-height: 2.2; }
+</style>
+</head>
+<body>
+<div class="container">
+  <h2>AI + 人間の役割分担</h2>
+  <div class="cards">
+    <div class="card ai">
+      <h3>AI担当</h3>
+      <ul>
+        <li>下書き作成</li>
+        <li>アイデア出し</li>
+        <li>情報収集</li>
+        <li>校正</li>
+      </ul>
+    </div>
+    <div class="card human">
+      <h3>人間担当</h3>
+      <ul>
+        <li>最終確認</li>
+        <li>創造性</li>
+        <li>判断</li>
+        <li>責任</li>
+      </ul>
+    </div>
+  </div>
+</div>
+</body>
+</html>

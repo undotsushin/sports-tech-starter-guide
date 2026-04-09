@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<style>
+  body { margin: 0; padding: 40px; background: #f8f9fa; font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', sans-serif; }
+  .container { max-width: 600px; margin: 0 auto; }
+  .actors { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; }
+  .actor { text-align: center; width: 140px; }
+  .actor-icon { font-size: 40px; margin-bottom: 6px; }
+  .actor-title { font-size: 14px; font-weight: bold; color: #333; }
+  .flows { display: flex; flex-direction: column; gap: 10px; margin-top: 20px; }
+  .flow-row { display: flex; align-items: center; padding: 10px 14px; border-radius: 8px; font-size: 13px; }
+  .flow-1 { background: #e3f2fd; }
+  .flow-2 { background: #fff3e0; }
+  .flow-3 { background: #e8f5e9; }
+  .flow-num { width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 12px; color: white; margin-right: 10px; flex-shrink: 0; }
+  .num-1 { background: #1976d2; }
+  .num-2 { background: #e65100; }
+  .num-3 { background: #388e3c; }
+  .flow-text { font-weight: bold; color: #333; flex: 1; }
+  .flow-dir { font-size: 13px; color: #888; }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="actors">
+    <div class="actor">
+      <div class="actor-icon">🏢</div>
+      <div class="actor-title">広告主</div>
+    </div>
+    <div class="actor">
+      <div class="actor-icon">🔄</div>
+      <div class="actor-title">アドネットワーク</div>
+    </div>
+    <div class="actor">
+      <div class="actor-icon">🌐</div>
+      <div class="actor-title">Webサイト</div>
+    </div>
+  </div>
+  <div class="flows">
+    <div class="flow-row flow-1">
+      <div class="flow-num num-1">1</div>
+      <div class="flow-text">広告を出したい</div>
+      <div class="flow-dir">広告主 → アドネットワーク</div>
+    </div>
+    <div class="flow-row flow-2">
+      <div class="flow-num num-2">2</div>
+      <div class="flow-text">広告枠を提供</div>
+      <div class="flow-dir">Webサイト → アドネットワーク</div>
+    </div>
+    <div class="flow-row flow-3">
+      <div class="flow-num num-3">3</div>
+      <div class="flow-text">一括で複数サイトに配信</div>
+      <div class="flow-dir">アドネットワーク → 各サイト</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

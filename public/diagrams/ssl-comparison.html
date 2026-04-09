@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<style>
+  body { margin: 0; padding: 40px; background: #f8f9fa; font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', sans-serif; }
+  .container { max-width: 600px; margin: 0 auto; display: flex; flex-direction: column; gap: 24px; }
+  .card { border-radius: 12px; padding: 20px 24px; }
+  .card-safe { background: #e8f5e9; border: 2px solid #2e7d32; }
+  .card-danger { background: #ffebee; border: 2px solid #c62828; }
+  .card-label { font-size: 14px; font-weight: bold; margin-bottom: 12px; }
+  .label-safe { color: #2e7d32; }
+  .label-danger { color: #c62828; }
+  .address-bar { background: white; border: 1px solid #ddd; border-radius: 8px; padding: 12px 16px; display: flex; align-items: center; gap: 10px; }
+  .lock-icon { font-size: 18px; }
+  .url-text { font-family: 'Courier New', monospace; font-size: 15px; }
+  .url-safe { color: #333; }
+  .url-danger { color: #c62828; }
+  .status { font-size: 13px; margin-top: 8px; padding-left: 4px; }
+  .status-safe { color: #2e7d32; }
+  .status-danger { color: #c62828; }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="card card-safe">
+    <div class="card-label label-safe">SSL対応あり（安全）</div>
+    <div class="address-bar">
+      <span class="lock-icon">🔒</span>
+      <span class="url-text url-safe"><strong>https</strong>://example.com</span>
+    </div>
+    <div class="status status-safe">✓ 保護された通信 — データが暗号化されています</div>
+  </div>
+
+  <div class="card card-danger">
+    <div class="card-label label-danger">SSL対応なし（危険）</div>
+    <div class="address-bar">
+      <span class="lock-icon">⚠️</span>
+      <span class="url-text url-danger"><strong>http</strong>://example.com</span>
+    </div>
+    <div class="status status-danger">✗ 保護されていない通信 — 第三者に情報が見られる可能性</div>
+  </div>
+</div>
+</body>
+</html>

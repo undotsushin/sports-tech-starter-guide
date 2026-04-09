@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #f8f9fa; font-family: -apple-system, 'Hiragino Sans', 'Meiryo', sans-serif; display: flex; justify-content: center; padding: 24px; }
+  .container { max-width: 520px; width: 100%; }
+  .origin { text-align: center; background: #fff; border-radius: 12px; padding: 12px; margin-bottom: 8px; font-size: 15px; font-weight: 700; color: #333; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+  .origin span { color: #E74C3C; }
+  .arrow { text-align: center; color: #bbb; font-size: 18px; margin: 2px 0; }
+  .step { background: #fff; border-radius: 12px; padding: 14px 20px; margin-bottom: 6px; border-left: 5px solid; box-shadow: 0 2px 8px rgba(0,0,0,0.06); display: flex; justify-content: space-between; align-items: center; }
+  .step .text { font-size: 14px; color: #333; font-weight: 600; }
+  .step .cost { font-size: 13px; font-weight: 700; white-space: nowrap; }
+  .s1 { border-color: #4A90D9; } .s1 .cost { color: #4A90D9; }
+  .s2 { border-color: #50C878; } .s2 .cost { color: #50C878; }
+  .s3 { border-color: #F5A623; } .s3 .cost { color: #F5A623; }
+  .s4 { border-color: #9B59B6; } .s4 .cost { color: #9B59B6; }
+  .num { display: inline-block; width: 22px; height: 22px; border-radius: 50%; color: #fff; font-size: 12px; text-align: center; line-height: 22px; margin-right: 8px; }
+  .s1 .num { background: #4A90D9; } .s2 .num { background: #50C878; } .s3 .num { background: #F5A623; } .s4 .num { background: #9B59B6; }
+</style>
+</head>
+<body>
+<div class="container" id="diagram">
+  <div class="origin">元の見積もり: <span>300万円</span></div>
+  <div class="arrow">▼</div>
+  <div class="step s1">
+    <div class="text"><span class="num">1</span>機能の優先順位付け(MVP開発)</div>
+    <div class="cost">200万円(33%削減)</div>
+  </div>
+  <div class="arrow">▼</div>
+  <div class="step s2">
+    <div class="text"><span class="num">2</span>既存テンプレートの活用</div>
+    <div class="cost">150万円(50%削減)</div>
+  </div>
+  <div class="arrow">▼</div>
+  <div class="step s3">
+    <div class="text"><span class="num">3</span>段階的リリース</div>
+    <div class="cost">第1期100万+第2期100万</div>
+  </div>
+  <div class="arrow">▼</div>
+  <div class="step s4">
+    <div class="text"><span class="num">4</span>オープンソースの活用</div>
+    <div class="cost">80万円(73%削減)</div>
+  </div>
+</div>
+</body>
+</html>

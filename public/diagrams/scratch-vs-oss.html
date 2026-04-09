@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<style>
+  body { margin: 0; padding: 30px; background: #f8f9fa; font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', sans-serif; }
+  .container { max-width: 520px; margin: 0 auto; display: flex; gap: 16px; }
+  .card { flex: 1; border-radius: 10px; padding: 16px; }
+  .card-scratch { background: #ffebee; border: 2px solid #c62828; }
+  .card-oss { background: #e8f5e9; border: 2px solid #2e7d32; }
+  .card-title { font-size: 14px; font-weight: bold; text-align: center; margin-bottom: 12px; }
+  .title-scratch { color: #c62828; }
+  .title-oss { color: #2e7d32; }
+  .item { padding: 6px 0; border-bottom: 1px solid rgba(0,0,0,0.06); font-size: 12px; color: #333; }
+  .item:last-child { border-bottom: none; }
+  .highlight { font-weight: bold; color: #2e7d32; }
+</style>
+</head>
+<body>
+<div class="container" id="diagram">
+  <div class="card card-scratch">
+    <div class="card-title title-scratch">フルスクラッチ</div>
+    <div class="item">ECサイト構築: <strong>300万円</strong></div>
+    <div class="item">カスタマイズ開発</div>
+    <div class="item">すべて一から作る</div>
+  </div>
+  <div class="card card-oss">
+    <div class="card-title title-oss">オープンソース活用</div>
+    <div class="item">WordPress + WooCommerce</div>
+    <div class="item">カスタマイズのみ</div>
+    <div class="item">基本機能は無料</div>
+    <div class="item">費用: <span class="highlight">80万円（73%削減）</span></div>
+  </div>
+</div>
+</body>
+</html>

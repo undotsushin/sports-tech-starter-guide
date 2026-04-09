@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<style>
+  body { margin: 0; padding: 40px; background: #f8f9fa; font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', sans-serif; }
+  .container { max-width: 560px; margin: 0 auto; }
+  .title { text-align: center; font-size: 16px; font-weight: bold; color: #333; margin-bottom: 20px; }
+  .labels { display: flex; justify-content: space-between; margin-bottom: 6px; padding: 0 4px; }
+  .label { font-size: 12px; font-weight: bold; text-align: center; }
+  .label-ad { color: #c62828; }
+  .label-main { color: #1565c0; }
+  .timeline { display: flex; height: 56px; border-radius: 8px; overflow: hidden; }
+  .segment { display: flex; align-items: center; justify-content: center; flex-direction: column; }
+  .seg-pre { background: #ffcdd2; flex: 1; border-right: 2px solid white; }
+  .seg-main { background: #bbdefb; flex: 3; border-right: 2px solid white; position: relative; }
+  .seg-mid { position: absolute; width: 30px; height: 100%; background: #ffcdd2; left: 50%; transform: translateX(-50%); display: flex; align-items: center; justify-content: center; }
+  .seg-post { background: #ffcdd2; flex: 1; }
+  .seg-label { font-size: 12px; font-weight: bold; color: #333; }
+  .seg-sub { font-size: 10px; color: #666; }
+  .bottom-labels { display: flex; justify-content: space-between; margin-top: 8px; padding: 0 4px; }
+  .bottom-label { font-size: 11px; color: #888; text-align: center; }
+  .arrows { display: flex; justify-content: space-between; padding: 0 30px; margin-bottom: 2px; }
+  .arrow { font-size: 16px; color: #999; }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="title">動画広告の配置タイミング</div>
+  <div class="labels">
+    <div class="label label-ad">プリロール</div>
+    <div class="label label-main">ミッドロール</div>
+    <div class="label label-ad">ポストロール</div>
+  </div>
+  <div class="arrows">
+    <div class="arrow">↓</div>
+    <div class="arrow">↓</div>
+    <div class="arrow">↓</div>
+  </div>
+  <div class="timeline">
+    <div class="segment seg-pre">
+      <div class="seg-label">広告</div>
+      <div class="seg-sub">15秒</div>
+    </div>
+    <div class="segment seg-main">
+      <div class="seg-label">動画本編</div>
+      <div class="seg-mid"><span style="font-size:10px;color:#c62828;">広告</span></div>
+    </div>
+    <div class="segment seg-post">
+      <div class="seg-label">広告</div>
+      <div class="seg-sub">30秒</div>
+    </div>
+  </div>
+  <div class="bottom-labels">
+    <div class="bottom-label">再生前</div>
+    <div class="bottom-label">再生途中</div>
+    <div class="bottom-label">再生後</div>
+  </div>
+</div>
+</body>
+</html>

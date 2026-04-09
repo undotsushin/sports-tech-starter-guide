@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=700">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #f8f9fa; font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', sans-serif; display: flex; justify-content: center; padding: 20px; }
+.card { background: #fff; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); padding: 28px 32px; width: 640px; }
+h2 { font-size: 18px; color: #333; margin-bottom: 16px; text-align: center; }
+.cols { display: flex; gap: 16px; }
+.bad { flex: 1; background: #ffebee; border: 2px solid #ef5350; border-radius: 10px; padding: 16px; }
+.good { flex: 1; background: #e8f5e9; border: 2px solid #66bb6a; border-radius: 10px; padding: 16px; }
+.label { font-size: 14px; font-weight: bold; margin-bottom: 8px; }
+.bad .label { color: #d32f2f; }
+.good .label { color: #2e7d32; }
+.text { font-size: 13px; color: #333; line-height: 1.7; }
+.checkbox { display: flex; align-items: center; gap: 6px; margin-top: 6px; font-size: 13px; color: #333; }
+.checkbox-icon { width: 16px; height: 16px; border: 2px solid #66bb6a; border-radius: 3px; flex-shrink: 0; }
+</style>
+</head>
+<body>
+<div class="card" id="target">
+  <h2>同意の取得</h2>
+  <div class="cols">
+    <div class="bad">
+      <div class="label">× 悪い例</div>
+      <div class="text">勝手にメールアドレスを取得</div>
+    </div>
+    <div class="good">
+      <div class="label">○ 良い例</div>
+      <div class="checkbox">
+        <span class="checkbox-icon"></span>
+        メールマガジンの配信に同意する
+      </div>
+      <div class="text" style="margin-top:8px;font-size:12px;color:#666;">（チェックボックスで明示的に同意）</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>身近なSaaS例</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #f8f9fa; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', sans-serif; }
+  #diagram {
+    padding: 24px;
+    max-width: 680px;
+  }
+  h2 { font-size: 18px; color: #333; margin-bottom: 16px; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .category {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 16px;
+  }
+  .category:nth-child(1) { border-top: 4px solid #1a73e8; }
+  .category:nth-child(2) { border-top: 4px solid #34a853; }
+  .category:nth-child(3) { border-top: 4px solid #fbbc04; }
+  .category:nth-child(4) { border-top: 4px solid #ea4335; }
+  .cat-title { font-size: 14px; font-weight: 700; color: #333; margin-bottom: 10px; }
+  .cat-item { font-size: 12px; color: #555; line-height: 1.8; padding-left: 8px; border-left: 2px solid #e0e0e0; margin-bottom: 4px; }
+</style>
+</head>
+<body>
+<div id="diagram">
+  <h2>業務別のSaaS例</h2>
+  <div class="grid">
+    <div class="category">
+      <div class="cat-title">ビジネス一般</div>
+      <div class="cat-item">Gmail（メール）</div>
+      <div class="cat-item">Google ドライブ（ファイル共有）</div>
+      <div class="cat-item">Slack（チャット）</div>
+      <div class="cat-item">Zoom（ビデオ会議）</div>
+      <div class="cat-item">Dropbox（ファイル同期）</div>
+    </div>
+    <div class="category">
+      <div class="cat-title">営業・マーケティング</div>
+      <div class="cat-item">Salesforce（顧客管理）</div>
+      <div class="cat-item">HubSpot（MA）</div>
+      <div class="cat-item">Mailchimp（メール配信）</div>
+      <div class="cat-item">Shopify（ECサイト構築）</div>
+    </div>
+    <div class="category">
+      <div class="cat-title">経理・人事</div>
+      <div class="cat-item">freee（会計ソフト）</div>
+      <div class="cat-item">マネーフォワード（経費精算）</div>
+      <div class="cat-item">SmartHR（人事労務）</div>
+      <div class="cat-item">kintone（業務アプリ）</div>
+    </div>
+    <div class="category">
+      <div class="cat-title">開発・デザイン</div>
+      <div class="cat-item">GitHub（コード管理）</div>
+      <div class="cat-item">Figma（デザインツール）</div>
+      <div class="cat-item">Notion（ドキュメント管理）</div>
+      <div class="cat-item">Asana（プロジェクト管理）</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

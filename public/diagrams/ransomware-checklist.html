@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=700">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #f8f9fa; font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', sans-serif; display: flex; justify-content: center; padding: 20px; }
+.card { background: #fff; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); padding: 28px 32px; width: 640px; }
+h2 { font-size: 18px; color: #333; margin-bottom: 16px; text-align: center; }
+.section-title { font-size: 14px; font-weight: bold; color: #1565c0; margin-bottom: 8px; margin-top: 12px; }
+.section-title:first-of-type { margin-top: 0; }
+.items { list-style: none; margin-bottom: 4px; }
+.items li { display: flex; align-items: center; gap: 10px; padding: 7px 14px; margin-bottom: 4px; background: #e8f5e9; border-radius: 8px; font-size: 13px; color: #333; }
+.items.after li { background: #fff3e0; }
+.check { color: #2e7d32; font-size: 14px; flex-shrink: 0; }
+.items.after .check { color: #e65100; }
+.warning { display: flex; align-items: center; gap: 8px; padding: 8px 14px; background: #ffebee; border-radius: 8px; font-size: 13px; color: #d32f2f; font-weight: bold; margin-top: 4px; }
+</style>
+</head>
+<body>
+<div class="card" id="target">
+  <h2>ランサムウェア対策チェックリスト</h2>
+  <div class="section-title">事前対策</div>
+  <ul class="items">
+    <li><span class="check">☐</span>定期的なバックアップ（オフライン）</li>
+    <li><span class="check">☐</span>OSやソフトウェアの最新化</li>
+    <li><span class="check">☐</span>セキュリティソフトの導入</li>
+    <li><span class="check">☐</span>メール添付ファイルを開く際は注意</li>
+    <li><span class="check">☐</span>権限の最小化（管理者権限で作業しない）</li>
+  </ul>
+  <div class="section-title">感染後の対応</div>
+  <ul class="items after">
+    <li><span class="check">☐</span>すぐにネットワークから切断</li>
+    <li><span class="check">☐</span>警察に通報</li>
+    <li><span class="check">☐</span>セキュリティ会社に相談</li>
+    <li><span class="check">☐</span>バックアップから復元</li>
+  </ul>
+  <div class="warning">× 身代金は払わない（払っても復号される保証なし）</div>
+</div>
+</body>
+</html>

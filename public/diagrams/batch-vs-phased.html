@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<style>
+  body { margin: 0; padding: 30px; background: #f8f9fa; font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', sans-serif; }
+  .container { max-width: 560px; margin: 0 auto; display: flex; gap: 16px; align-items: flex-start; }
+  .card { flex: 1; border-radius: 10px; padding: 16px; }
+  .card-batch { background: #ffebee; border: 2px solid #c62828; }
+  .card-phased { background: #e8f5e9; border: 2px solid #2e7d32; }
+  .card-title { font-size: 14px; font-weight: bold; text-align: center; margin-bottom: 12px; }
+  .title-batch { color: #c62828; }
+  .title-phased { color: #2e7d32; }
+  .phase { background: white; border-radius: 8px; padding: 10px; margin-bottom: 8px; font-size: 12px; }
+  .phase:last-child { margin-bottom: 0; }
+  .phase-label { font-weight: bold; color: #333; margin-bottom: 4px; }
+  .phase-detail { color: #666; line-height: 1.6; }
+  .arrow { text-align: center; font-size: 16px; color: #999; margin: 4px 0; }
+</style>
+</head>
+<body>
+<div class="container" id="diagram">
+  <div class="card card-batch">
+    <div class="card-title title-batch">一括リリース</div>
+    <div class="phase">
+      <div class="phase-label">第1期: 全機能開発</div>
+      <div class="phase-detail">期間: 4ヶ月<br>費用: 300万円<br>リリース: 4ヶ月後</div>
+    </div>
+  </div>
+  <div class="card card-phased">
+    <div class="card-title title-phased">段階的リリース</div>
+    <div class="phase">
+      <div class="phase-label">第1期: 基本機能のみ</div>
+      <div class="phase-detail">期間: 2ヶ月 / 費用: 100万円</div>
+    </div>
+    <div class="arrow">↓</div>
+    <div class="phase">
+      <div class="phase-label">第2期: 追加機能</div>
+      <div class="phase-detail">期間: 2ヶ月 / 費用: 100万円</div>
+    </div>
+    <div class="arrow">↓</div>
+    <div class="phase">
+      <div class="phase-label">第3期: 拡張機能</div>
+      <div class="phase-detail">期間: 2ヶ月 / 費用: 100万円</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

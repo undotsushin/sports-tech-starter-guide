@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<style>
+  body { margin: 0; padding: 32px; background: #f8f9fa; font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', sans-serif; }
+  .container { max-width: 620px; margin: 0 auto; }
+  h2 { text-align: center; color: #333; font-size: 18px; margin-bottom: 6px; }
+  .subtitle { text-align: center; color: #888; font-size: 13px; margin-bottom: 24px; }
+  .cards { display: flex; gap: 16px; }
+  .card { flex: 1; background: white; border-radius: 12px; padding: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+  .card.before { border-top: 4px solid #c62828; }
+  .card.after { border-top: 4px solid #2e7d32; }
+  .card h3 { margin: 0 0 14px 0; font-size: 15px; }
+  .card.before h3 { color: #c62828; }
+  .card.after h3 { color: #2e7d32; }
+  .item { display: flex; justify-content: space-between; align-items: center; padding: 8px 0; border-bottom: 1px solid #f0f0f0; font-size: 13px; }
+  .item:last-child { border-bottom: none; }
+  .label { color: #555; }
+  .value { font-weight: bold; color: #333; }
+  .card.after .value { color: #2e7d32; }
+  .roi { text-align: center; margin-top: 16px; background: white; border-radius: 12px; padding: 14px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+  .roi span { font-size: 22px; font-weight: bold; color: #6366f1; }
+  .roi p { margin: 4px 0 0; font-size: 12px; color: #888; }
+</style>
+</head>
+<body>
+<div class="container">
+  <h2>A社の導入事例</h2>
+  <div class="subtitle">IT企業・従業員100人・導入6ヶ月後</div>
+  <div class="cards">
+    <div class="card before">
+      <h3>導入前の課題</h3>
+      <div class="item"><span class="label">資料作成</span><span class="value">時間がかかる</span></div>
+      <div class="item"><span class="label">メール対応</span><span class="value">追いつかない</span></div>
+      <div class="item"><span class="label">アイデア出し</span><span class="value">時間がかかる</span></div>
+    </div>
+    <div class="card after">
+      <h3>導入後の効果</h3>
+      <div class="item"><span class="label">資料作成時間</span><span class="value">75%削減</span></div>
+      <div class="item"><span class="label">メール対応時間</span><span class="value">80%削減</span></div>
+      <div class="item"><span class="label">企画立案時間</span><span class="value">60%削減</span></div>
+      <div class="item"><span class="label">従業員満足度</span><span class="value">45%向上</span></div>
+      <div class="item"><span class="label">売上</span><span class="value">20%増加</span></div>
+    </div>
+  </div>
+  <div class="roi"><span>ROI: 投資の8倍</span><p>のリターン</p></div>
+</div>
+</body>
+</html>

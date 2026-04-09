@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<style>
+  body { margin: 0; padding: 40px; background: #f8f9fa; font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', sans-serif; }
+  .container { max-width: 520px; margin: 0 auto; display: flex; gap: 24px; }
+  .col { flex: 1; }
+  .col-title { font-size: 14px; font-weight: bold; text-align: center; margin-bottom: 12px; padding: 8px; border-radius: 8px; }
+  .title-normal { background: #f5f5f5; color: #666; }
+  .title-2fa { background: #e3f2fd; color: #1565c0; }
+  .step { border-radius: 10px; padding: 12px; text-align: center; font-size: 13px; font-weight: bold; margin-bottom: 8px; }
+  .step-pw { background: #fff3e0; border: 1px solid #e65100; color: #e65100; }
+  .step-done { background: #e8f5e9; border: 1px solid #2e7d32; color: #2e7d32; }
+  .step-sms { background: #f3e5f5; border: 1px solid #6a1b9a; color: #6a1b9a; }
+  .arrow { text-align: center; font-size: 18px; color: #999; margin: 4px 0; }
+  .note { font-size: 11px; color: #888; text-align: center; margin-top: 12px; line-height: 1.5; }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="col">
+    <div class="col-title title-normal">通常のログイン</div>
+    <div class="step step-pw">パスワード入力</div>
+    <div class="arrow">↓</div>
+    <div class="step step-done">ログイン完了</div>
+  </div>
+  <div class="col">
+    <div class="col-title title-2fa">二要素認証</div>
+    <div class="step step-pw">パスワード入力</div>
+    <div class="arrow">↓</div>
+    <div class="step step-sms">スマホに通知<br>6桁の数字入力</div>
+    <div class="arrow">↓</div>
+    <div class="step step-done">ログイン完了</div>
+    <div class="note">パスワードが漏れても、<br>スマホがないとログインできない</div>
+  </div>
+</div>
+</body>
+</html>

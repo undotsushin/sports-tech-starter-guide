@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=700">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #f8f9fa; font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', sans-serif; display: flex; justify-content: center; padding: 20px; }
+.card { background: #fff; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); padding: 28px 32px; width: 640px; }
+h2 { font-size: 18px; color: #d32f2f; margin-bottom: 16px; text-align: center; }
+.case { margin-bottom: 12px; padding: 14px 16px; border-radius: 10px; border-left: 4px solid #d32f2f; background: #fff5f5; }
+.case:last-child { margin-bottom: 0; }
+.case-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px; }
+.company { font-size: 16px; font-weight: bold; color: #333; }
+.amount { font-size: 16px; font-weight: bold; color: #d32f2f; }
+.year { font-size: 12px; color: #888; }
+.reason { font-size: 13px; color: #666; }
+</style>
+</head>
+<body>
+<div class="card" id="target">
+  <h2>GDPR違反の罰金事例</h2>
+  <div class="case">
+    <div class="case-header">
+      <span class="company">Amazon <span class="year">（2021年）</span></span>
+      <span class="amount">746億円</span>
+    </div>
+    <div class="reason">→ ターゲティング広告で同意を得ていない</div>
+  </div>
+  <div class="case">
+    <div class="case-header">
+      <span class="company">Google <span class="year">（2019年）</span></span>
+      <span class="amount">56億円</span>
+    </div>
+    <div class="reason">→ 広告のターゲティングが不透明</div>
+  </div>
+  <div class="case">
+    <div class="case-header">
+      <span class="company">Facebook <span class="year">（2019年）</span></span>
+      <span class="amount">12億円</span>
+    </div>
+    <div class="reason">→ パスワードを平文で保存</div>
+  </div>
+</div>
+</body>
+</html>

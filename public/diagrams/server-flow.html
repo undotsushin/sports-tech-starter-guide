@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<style>
+  body { margin: 0; padding: 40px; background: #f8f9fa; font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', sans-serif; }
+  .container { max-width: 700px; margin: 0 auto; }
+  .flow { display: flex; align-items: flex-start; justify-content: space-between; gap: 20px; }
+  .actor { text-align: center; width: 200px; }
+  .actor-icon { font-size: 64px; margin-bottom: 8px; }
+  .actor-title { font-size: 18px; font-weight: bold; color: #333; }
+  .actor-sub { font-size: 13px; color: #888; }
+  .arrows { flex: 1; display: flex; flex-direction: column; justify-content: center; gap: 16px; padding-top: 30px; }
+  .arrow-row { display: flex; align-items: center; padding: 12px 16px; border-radius: 10px; }
+  .arrow-right { background: #e3f2fd; flex-direction: row; }
+  .arrow-left { background: #e8f5e9; flex-direction: row-reverse; }
+  .arrow-num { width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 14px; color: white; flex-shrink: 0; }
+  .num-blue { background: #1976d2; }
+  .num-green { background: #388e3c; }
+  .num-orange { background: #e65100; }
+  .arrow-text { font-size: 14px; font-weight: bold; margin: 0 12px; flex: 1; }
+  .arrow-icon { font-size: 24px; flex-shrink: 0; }
+  .server-files { display: flex; gap: 8px; justify-content: center; margin-top: 16px; }
+  .file-tag { background: white; border: 1px solid #e0e0e0; border-radius: 6px; padding: 4px 10px; font-size: 12px; font-family: 'Courier New', monospace; color: #555; }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="flow">
+    <div class="actor">
+      <div class="actor-icon">👤</div>
+      <div class="actor-title">ユーザー</div>
+      <div class="actor-sub">（あなた）</div>
+    </div>
+
+    <div class="arrows">
+      <div class="arrow-row arrow-right">
+        <div class="arrow-num num-blue">1</div>
+        <div class="arrow-text">ページを見たい！</div>
+        <div class="arrow-icon">→</div>
+      </div>
+
+      <div class="arrow-row" style="background: #fff3e0; justify-content: center;">
+        <div class="arrow-num num-orange">2</div>
+        <div class="arrow-text" style="text-align: center;">サーバーがデータを探す</div>
+      </div>
+
+      <div class="arrow-row arrow-left">
+        <div class="arrow-num num-green">3</div>
+        <div class="arrow-text" style="text-align: right;">はい、どうぞ！</div>
+        <div class="arrow-icon">←</div>
+      </div>
+    </div>
+
+    <div class="actor">
+      <div class="actor-icon">🖥️</div>
+      <div class="actor-title">サーバー</div>
+      <div class="actor-sub">（データ保管庫）</div>
+      <div class="server-files">
+        <div class="file-tag">HTML</div>
+        <div class="file-tag">CSS</div>
+        <div class="file-tag">画像</div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

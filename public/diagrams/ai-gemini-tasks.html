@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<style>
+  body { margin: 0; padding: 32px; background: #f8f9fa; font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', sans-serif; }
+  .container { max-width: 620px; margin: 0 auto; }
+  h2 { text-align: center; color: #333; font-size: 18px; margin-bottom: 20px; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .grid .card:last-child:nth-child(odd) { grid-column: 1 / -1; max-width: 50%; margin: 0 auto; }
+  .card { background: white; border-radius: 12px; padding: 16px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+  .card-header { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+  .num { background: #4285f4; color: white; width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: bold; flex-shrink: 0; }
+  .card-header h3 { margin: 0; font-size: 14px; color: #333; }
+  .card ul { margin: 0; padding-left: 18px; font-size: 12px; color: #666; line-height: 1.8; }
+</style>
+</head>
+<body>
+<div class="container">
+  <h2>Geminiの得意なタスク</h2>
+  <div class="grid">
+    <div class="card">
+      <div class="card-header"><div class="num">1</div><h3>最新情報の検索</h3></div>
+      <ul><li>ニュース、トレンド</li><li>株価、為替</li></ul>
+    </div>
+    <div class="card">
+      <div class="card-header"><div class="num">2</div><h3>YouTube動画の要約</h3></div>
+      <ul><li>長時間動画の要約</li><li>重要ポイント抽出</li></ul>
+    </div>
+    <div class="card">
+      <div class="card-header"><div class="num">3</div><h3>Google連携</h3></div>
+      <ul><li>Gmail、ドキュメント、スプレッドシート</li><li>Google Maps</li></ul>
+    </div>
+    <div class="card">
+      <div class="card-header"><div class="num">4</div><h3>画像認識</h3></div>
+      <ul><li>画像の説明</li><li>OCR（文字認識）</li></ul>
+    </div>
+    <div class="card">
+      <div class="card-header"><div class="num">5</div><h3>競合調査</h3></div>
+      <ul><li>最新の競合情報</li><li>市場動向</li></ul>
+    </div>
+  </div>
+</div>
+</body>
+</html>

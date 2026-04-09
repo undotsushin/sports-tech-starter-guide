@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #f8f9fa; font-family: -apple-system, 'Hiragino Sans', 'Meiryo', sans-serif; display: flex; justify-content: center; padding: 24px; }
+  .container { max-width: 520px; width: 100%; }
+  .title { font-size: 14px; color: #555; font-weight: 600; margin-bottom: 16px; text-align: center; }
+  .cards { display: flex; gap: 16px; }
+  .card { flex: 1; background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+  .card-header { padding: 12px 16px; color: #fff; font-weight: 700; font-size: 15px; text-align: center; }
+  .card-a .card-header { background: #6C7A89; }
+  .card-b .card-header { background: #4A90D9; }
+  .card-body { padding: 16px; }
+  .card-body .item { display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee; font-size: 14px; color: #333; }
+  .card-body .item:last-child { border-bottom: none; }
+  .card-body .item .val { font-weight: 600; }
+  .result { text-align: center; margin-top: 16px; padding: 12px; background: #E8F8F5; border-radius: 8px; font-size: 14px; color: #1ABC9C; font-weight: 700; }
+</style>
+</head>
+<body>
+<div class="container" id="diagram">
+  <div class="title">現在のページ(A)と改善版(B)を比較テスト</div>
+  <div class="cards">
+    <div class="card card-a">
+      <div class="card-header">A版(現行)</div>
+      <div class="card-body">
+        <div class="item"><span>ボタン色</span><span class="val">緑色</span></div>
+        <div class="item"><span>ボタン文言</span><span class="val">「購入」</span></div>
+        <div class="item"><span>CVR</span><span class="val">1.2%</span></div>
+      </div>
+    </div>
+    <div class="card card-b">
+      <div class="card-header">B版(改善)</div>
+      <div class="card-body">
+        <div class="item"><span>ボタン色</span><span class="val">オレンジ</span></div>
+        <div class="item"><span>ボタン文言</span><span class="val">「今すぐ試す」</span></div>
+        <div class="item"><span>CVR</span><span class="val" style="color:#E74C3C;">1.8%</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="result">B版が50%も良い! → B版を採用</div>
+</div>
+</body>
+</html>
